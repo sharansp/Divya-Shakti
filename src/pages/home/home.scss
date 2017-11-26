@@ -1,0 +1,23 @@
+page-home {
+/* Make it a marquee */
+.marquee {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 35s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 30em }
+    100% { text-indent: -105em }
+}
+
+
+}

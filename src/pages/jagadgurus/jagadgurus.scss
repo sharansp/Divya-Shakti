@@ -1,0 +1,24 @@
+page-jagadgurus {
+	.pwrap{
+		white-space: pre-wrap;
+		text-align: center;
+		color:black;
+	}
+
+	.jagadguruHeader{
+		text-align: center;
+		color:#482814;
+		text-decoration: underline;
+		font-weight:bolder;
+	}
+
+	.no-scroll .scroll-content{
+    	 overflow: hidden;
+	}
+
+	.icon-item-bg{
+		background-color:#ffe3ee;
+		border-radius:5px 5px 5px 5px;
+
+	}
+}

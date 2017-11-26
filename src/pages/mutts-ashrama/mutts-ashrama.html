@@ -1,0 +1,176 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title >
+      Mutts(Ashrama)
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- style="background: url('assets/img/adEnE5PRTpyozb6J6wHq_SiddalingaAppaji.jpg') no-repeat center;" -->
+<ion-content padding id="page5" style="background-color:#f5ecec;">
+	<h4 style="text-align:center; color: #ad100e;">Pujya Appaji established 365 Mutts across India, namely in Karnataka, Andhra Pradesh, Maharashtra and Goa. </h4>
+
+
+<ion-grid>
+  
+
+  <ion-row justify-content-center>
+    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+      Place
+    </ion-col>
+    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+      Address
+    </ion-col>
+    <!-- <ion-col >
+      Address
+    </ion-col> -->
+  </ion-row>
+
+  <ion-searchbar
+	  [(ngModel)]="myInput"
+	  [showCancelButton]="shouldShowCancel"
+	  (ionInput)="getItems($event)"
+	  (ionCancel)="onCancel($event)"
+    placeholder="search mutts here">
+  </ion-searchbar>
+
+  <ion-row justify-content-center *ngFor="let hero of data">
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+      {{hero.Place}}
+    </ion-col>
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+      {{hero.Mutt_Address}}
+    </ion-col>
+    <!-- <ion-col >
+      {{hero.Mutt_Address}}
+    </ion-col> -->
+  </ion-row>
+
+ 
+</ion-grid>
+		<!-- <ion-grid>
+		    <ion-row text-center>
+		      <ion-col >I'm a column</ion-col>
+		      <ion-col>Another column</ion-col>
+		    </ion-row>
+		    <ion-row text-center *ngFor="let hero of data">
+		    	<ion-row style="text-align:center;">{{hero.Place}}</ion-row>
+		    	<ion-row style="text-align:center;">{{hero.Mutt_Address}}</ion-row>
+		    </ion-row>
+		  </ion-grid> -->
+	<!-- <table>
+        <thead>
+            <th>Place</th>
+            <th>Address</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let hero of data">
+                <td style="text-align:center;">{{hero.Place}}</td>
+                <td style="text-align:center;">{{hero.Mutt_Address}}</td>
+                 <div class="spacer" style="height:15px;" id="gallery-spacer1"></div>
+            </tr>
+            
+        </tbody>
+    </table> --> 
+
+	<!-- <ion-list id="menu-list1">
+      <ion-item *ngFor="let item of data" color="none" menuClose="" style="background-color:#E8F6F4;"  on-click="goToHome()" id="menu-list-item1">
+        Home  {{item.title}}
+      </ion-item>
+  </ion-list> -->
+	<!-- <ion-list >
+  <ion-item *ngFor="let item of data">
+       <p><b>Match Palyed: </b> </p>        
+  </ion-item>
+</ion-list> -->
+<!-- 
+  <div class='table-responsive'>
+      <table class='table' *ngIf='meetups && meetups.length'>
+        <thead>
+          <tr>
+            <th>
+              <button class='btn btn-primary' (click)='toggleImage()'>
+                    {{showImage ? 'Hide' : 'Show'}} Image
+            </button>
+            </th>
+            <th>Meetup</th>
+            <th>Description</th>
+            <th>Available</th>
+            <th>Price</th>
+            <th>5 Star Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let meetup of meetups'>
+            <td>
+              <img *ngIf='showImage' [src]='meetup.imageUrl' [title]='meetup.meetupName' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'>
+            </td>
+            <td>{{ meetup.meetupName | uppercase }}</td>
+            <td>{{ meetup.description }}</td>
+            <td>{{ meetup.meetupDate }}</td>
+            <td>{{ meetup.price | currency:'INR':true }}</td>
+            <td>{{ meetup.starRating }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+<!-- 	<ion-grid>
+  <ion-row>
+    <ion-col>
+      1 of 2
+    </ion-col>
+    <ion-col>
+      2 of 2
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      1 of 3
+    </ion-col>
+    <ion-col>
+      2 of 3
+    </ion-col>
+    <ion-col>
+      3 of 3
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+ -->
+	<!-- <ion-grid>
+ 
+	    <ion-row>
+	        <ion-col>1</ion-col>
+	        <ion-col>2</ion-col>
+	        <ion-col>3</ion-col>
+	    </ion-row>
+	 
+	    <ion-row>
+	        <ion-col *ngFor="let item of data">{{item.title}}</ion-col>
+	        <ion-row *ngFor="let item of sharan">{{item}}</ion-row>
+	        <ion-row>22</ion-row>
+	    </ion-row>
+ 
+	</ion-grid>
+ -->
+	<!-- <ion-row responsive-sm wrap>
+		<ion-col width-50 *ngFor="let data of data">
+		<img src={{data.title}} />
+		<p>{{data.title}}</p>
+		<p>dsg</p>
+		</ion-col>
+	</ion-row> -->
+
+	<!-- <div class="row" *ngFor="data in data">
+          <div class="col">{{data.title}}</div>
+     </div> -->
+
+	<!-- <ion-grid>
+	  <ion-row *ngFor="let row of data">
+	  	<p>{{row.title}}</p>
+	  </ion-row>
+	</ion-grid> -->
+
+</ion-content>

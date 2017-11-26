@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Events
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page1" style="background-color:#f5ecec;">
+
+ <ion-grid>
+  
+
+  <ion-row justify-content-center>
+    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+      Date
+    </ion-col>
+    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+      Description
+    </ion-col>
+    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+      Place
+    </ion-col>
+  </ion-row>
+
+  <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="getItems($event)"
+    (ionCancel)="onCancel($event)"
+    placeholder="Search mutts here">
+  </ion-searchbar>
+
+  <ion-row justify-content-center *ngFor="let hero of data">
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+     {{hero.Date_Month}} {{hero.Date_Day}}
+    </ion-col>
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+      {{hero.Description}}
+    </ion-col>
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+      {{hero.Place}}
+    </ion-col>
+  </ion-row>
+
+ 
+</ion-grid>
+  <!-- <button id="events-button1" ion-button color="royal" block style="color:#FFFFFF;border-radius:24px 24px 24px 24px;" href-inappbrowser="http://bp9news.com/mmt-run-to-basava-purana-on-the-siddharameshwar-sankalpa-yatra1122/">
+    ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪ ಯಾತ್ರೆ
+  </button> -->
+</ion-content>

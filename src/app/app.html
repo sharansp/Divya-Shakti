@@ -1,0 +1,45 @@
+<ion-menu [content]="mainContent" >
+  <ion-header >
+    <ion-toolbar>
+      <ion-title style="color:#dddddd;" >
+        Menu
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content  class="no-scroll" id="side-menu21"  style="background-color:#ffffff;">
+    <ion-list id="menu-list1">
+      <ion-item color="none" menuClose="" style="background-color:#ffffff;"  on-click="goToHome()" id="menu-list-item1">
+        Home
+        <div>
+          
+          <audio autoplay='true'  loop='false'>
+            <source src="assets/audio/guru-brahma.mp3"  >
+          </audio>
+        </div>
+      </ion-item>
+      <ion-item color="none" menuClose="" style="background-color:#ffffff;"  on-click="goToJagadgurus()" id="menu-list-item2">
+        Divya Shaktiya Bhavya Parampare
+      </ion-item>
+      <ion-item color="none" menuClose="" style="background-color:#ffffff;"  on-click="goToMuttsAshrama()" id="menu-list-item3">
+        Mutts
+      </ion-item>
+      <ion-item color="none" menuClose="" style="background-color:#ffffff;"  on-click="goToEvents()" id="menu-list-item4">
+        Events
+      </ion-item>
+      <!-- <ion-item color="none" menuClose="" style="background-color:#ffffff;"  on-click="goToBlogs()" id="menu-list-item7">
+        Blogs
+      </ion-item> -->
+      <ion-item color="none" menuClose="" style="background-color:#ffffff;"  on-click="goToGallery()" id="menu-list-item13">
+        Gallery
+      </ion-item>
+      <ion-item color="none" menuClose="" style="background-color:#ffffff;"  on-click="goToAbhishekSeva()" id="menu-list-item8">
+        Abhishek Seva
+      </ion-item>
+      <ion-item color="none" menuClose="" style="background-color:#ffffff;"  on-click="goToContacts()" id="menu-list-item9">
+        Contacts
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>
