@@ -1,76 +1,48 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title ><!-- style="text-align:center;" -->
-      ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠ
-    </ion-title>
-  </ion-navbar>
+   <ion-navbar>
+      <button ion-button menuToggle>
+         <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title style="text-align:center;">
+         ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠ
+      </ion-title>
+   </ion-navbar>
 </ion-header>
 <ion-content id="page4" style="background-color:#f5ecec;">
-  <div>
-    <img src="assets/img/banner.jpg" style="display:block;width:100%;height:auto;" />
-  </div>
-  <!-- <div class="spacer" style="height:15px;" id="gallery-spacer1"></div> -->
-  <div id="home-container1">
-    <h4 id="home-heading1" class="marquee" style="color:#FF0000;font-style:italic;text-align:center;text-decoration: none;">* ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠ : ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪವು 2018ರ ಜನೆವರಿ 12, 13,14 ರಂದು 
-    ಜರುಗಲಿದೆ.      * ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠ : ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪವು 2018ರ ಜನೆವರಿ 12, 13,14 ರಂದು ಜರುಗಲಿದೆ</h4>
+   <div>
+      <img src="assets/img/banner.jpg" style="display:block;width:100%;height:auto;" />
+   </div>
+   <!-- <div class="spacer" style="height:15px;" id="gallery-spacer1"></div> -->
+   <div id="home-container1">
+      <h4 id="home-heading1" class="marquee" style="color:#FF0000;font-style:italic;text-align:center;text-decoration: none;">* ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠ : ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪವು 2018ರ ಜನೆವರಿ 12, 13,14 ರಂದು 
+         ಜರುಗಲಿದೆ.      * ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠ : ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪವು 2018ರ ಜನೆವರಿ 12, 13,14 ರಂದು ಜರುಗಲಿದೆ
+      </h4>
+      <ion-slides zoom="true" speed="2000" autoplay="10000" pager loop paginationType="bullets" style="max-height: 860px;width:100%;height: 100%;">
+         <ion-slide *ngFor="let slide of slides">
+            <img [src]="slide" on-click="goToSlideImage(slide)">
+         </ion-slide>
+      </ion-slides>
+   </div>
 
-    <ion-slides zoom="true" speed="2000" autoplay="10000" pager loop paginationType="bullets" style="max-height: 860px;width:100%;height: 100%;">
-      <ion-slide *ngFor="let slide of slides">
-        <img [src]="slide" on-click="goToSlideImage(slide)">
-      </ion-slide>
-    </ion-slides>
+   <!-- <div class="row" id="buttonsFirstWrapper" >
+      <div class="col col-50"  >
+         <img width="80" height="90" on-click="goToEvents()" src="assets/img/events-icon.png">
 
-    <!-- <div class="row" id="buttonsFirstWrapper" > 
-        <div class="col col-50"  >
-        
-         <ion-img width="80" height="90" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
-        </div>
-    </div>  -->
+         <ion-img width="80" height="90" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png"></ion-img>
+         
+      </div>
+   </div> -->
 
- <!-- <ion-icon name="grid"></ion-icon> -->
-    <!-- <div class="row" id="buttonsFirstWrapper" > 
-        <div class="col col-50"  >
-        
-         <ion-img width="80" height="90" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
-        </div>
-        <div class="col col-50">
-          <ion-img width="80" height="90" on-click="goToSlideImage()" src="assets/img/about-mutt-icon.png"></ion-img>
-        </div>
-        
-        <div class="col col-50"  >
-        
-         <ion-img width="80" height="90" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
-        </div>
-        <div class="col col-50">
-          <ion-img width="80" height="90" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png"></ion-img>
-        </div>
-    </div> -->
-    <!-- <div class="row">
-        <div class="col col-50"><a href="javascript:void(0);"><img src="http://commercepromote.com/mobile-app/de_duplication_btn.png" /></a></div>
-        <div class="col col-50"><a href="javascript:void(0);"><img src="http://commercepromote.com/mobile-app/import_btn.png" /></a></div>
-    </div> -->
-    <!-- <div class="row">
-        <div class="col col-50"><a href="javascript:void(0);"><img src="http://commercepromote.com/mobile-app/export_btn.png" /></a></div>
-        <div class="col col-50"><a href="javascript:void(0);"><img src="http://commercepromote.com/mobile-app/configuration_btn.png" /></a></div>
-    </div> -->
-  </div>
-
-  <div   id="gallery-spacer0" style="    background-color: #87deda;
-    font-size: medium;
-    /* font-style: italic; */
-    font-family: cursive;text-align: -webkit-center;">
+   <div   id="gallery-spacer0" style="    background-color: #87deda;
+      font-size: medium;
+      font-family: cursive;text-align: -webkit-center;">
       ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪ ಯಾತ್ರೆ
-    </div>
-    <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="gallery-video1">
+   </div>
+   <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="gallery-video1">
       <iframe src="https://www.youtube.com/embed/YmXIsADxyQg?rel=0&amp;showinfo=0?modestbranding=1" frameborder="0" allowfullscreen width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-    </div>
-    <ion-tabs>
- <ion-tab [root]="chatRoot" [rootParams]="chatParams" tabTitle="Chat" tabIcon="chat"></ion-tab>
-</ion-tabs>
+   </div>
+   <ion-tabs>
+      <ion-tab [root]="chatRoot" [rootParams]="chatParams" tabTitle="Chat" tabIcon="chat"></ion-tab>
+   </ion-tabs>
 </ion-content>
-
-
 <!--  <img src="http://commercepromote.com/mobile-app/contacts_btn.png" /> -->
