@@ -11,8 +11,8 @@ export class HomePage {
 	slides = [];
 
   constructor(public navCtrl: NavController) {
-  	this.slides.push('assets/img/sanklpa-yatre.jpg');
-    this.slides.push('assets/img/sanklpa-yatre-6.jpg');
+  	this.slides.push('assets/img/sanklpa-yatre-6.jpg');
+    this.slides.push('assets/img/sanklpa-yatre.jpg');
   	this.slides.push('assets/img/sanklpa-yatre-5.jpg');
   	/*var audio = new Audio('/assets/audio/guru-brahma.mp3');
   	audio.play();*/
