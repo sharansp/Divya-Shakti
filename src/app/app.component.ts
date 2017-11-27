@@ -23,15 +23,45 @@ import { HomePage } from '../pages/home/home';
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
     rootPage:any = HomePage;
+    showedAlert: boolean;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+
+
+  constructor( platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+      this.showedAlert = false;
+                      // Confirm exit
+        platform.registerBackButtonAction(() => {
+          console.log(this.navCtrl.length() )
+            if (this.navCtrl.length() == 1) {
+              console.log(this.navCtrl);
+                if (!this.showedAlert) {
+                  console.log(this.navCtrl.getActive().component.name);
+                  if(this.navCtrl.getActive().component.name!='HomePage'){
+                      this.navCtrl.setRoot(HomePage);
+                      this.navCtrl.popToRoot();
+                  }else{
+                      platform.exitApp();
+                  }
+                } else {
+                    this.showedAlert = false;
+                    //confirmAlert.dismiss();
+                }
+            }
+            else{
+                this.navCtrl.pop();  
+            }
+            
+        });
+
+
     });
   }
+  
   goToJagadgurus(params){
     if (!params) params = {};
     this.navCtrl.setRoot(JagadgurusPage);

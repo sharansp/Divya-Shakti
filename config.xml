@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.mugalkhodjidaga.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Poojya Appaji</name>
     <description>Mugalkhod Jidaga Mutt</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.99.1:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -55,6 +55,8 @@
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
     <preference name="SplashScreenDelay" value="3000" />
+    <allow-navigation href="http://192.168.43.33:8100" />
+    <allow-navigation href="http://192.168.99.1:8100" />
     <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.5.4" />
     <plugin name="cordova-plugin-device" spec="^1.1.4" />
