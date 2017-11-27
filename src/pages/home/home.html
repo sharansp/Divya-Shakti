@@ -23,14 +23,18 @@
          </ion-slide> 
       </ion-slides>
 
-      <!-- <div class="row" id="buttonsFirstWrapper" >
-          <div class="col col-50"  >
-             <img width="140" height="140" on-click="goToEvents()" src="assets/img/events-icon.png">
-
-             <ion-img width="140" height="140" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png"></ion-img>
+        <div class="row" id="buttonsFirstWrapper1">
              
-          </div>
-       </div> -->
+             <ion-img width="90" height="80" (click)="goToEvents()" src="assets/img/events-icon.png"></ion-img>
+              <ion-img width="90" height="80" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png"></ion-img>
+
+          
+             
+             <ion-img width="90" height="80" (click)="goToEvents()" src="assets/img/calendar (2).png"></ion-img>
+           
+              <ion-img width="90" height="80" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png"></ion-img>
+            
+        </div> 
 
    </div>
 
@@ -51,8 +55,6 @@
    <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="gallery-video1">
       <iframe src="https://www.youtube.com/embed/YmXIsADxyQg?rel=0&amp;showinfo=0?modestbranding=1" frameborder="0" allowfullscreen width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
    </div>
-   <ion-tabs>
-      <ion-tab [root]="chatRoot" [rootParams]="chatParams" tabTitle="Chat" tabIcon="chat"></ion-tab>
-   </ion-tabs>
+  
 </ion-content>
 <!--  <img src="http://commercepromote.com/mobile-app/contacts_btn.png" /> -->

@@ -23,6 +23,8 @@ import { HomePage } from '../pages/home/home';
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
     rootPage:any = HomePage;
+    Nav;
+
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -30,8 +32,43 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+      
+
+       // var lastTimeBackPress = 0;
+       //            var timePeriodToExit  = 2000;
+
+                  platform.registerBackButtonAction(() => {
+                    /*if (ServicesProvider.isDeviceBackExit) {
+                          //Double check to exit app
+                          if (new Date().getTime() - lastTimeBackPress < timePeriodToExit) {
+                              this.platform.exitApp(); //Exit from app
+                          } else {
+                              let toast = this.toastCtrl.create({
+                                  message:  'Press back again to exit App?',
+                                  duration: 3000,
+                                  position: 'bottom'
+                              });
+                              toast.present();
+                              lastTimeBackPress = new Date().getTime();
+                          }
+                      }*/ //else {
+                          // go to previous page
+                          //this.nav.pop({});
+                          window.history.back();
+                         // this.nav.push(MenuPage)
+                          /*if(ServicesProvider.NAVCTRL){
+                              ServicesProvider.NAVCTRL.pop() // it will remove details page view only.
+                          }
+                          else{
+                              this.Nav.pop() // it will remove entire Menupage and closes app.
+                          }*/
+                          //return false;
+                 //     }
+
+                  });
     });
   }
+  
   goToJagadgurus(params){
     if (!params) params = {};
     this.navCtrl.setRoot(JagadgurusPage);
