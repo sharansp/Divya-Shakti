@@ -3,7 +3,7 @@
     <name>Poojya Appaji</name>
     <description>Mugalkhod Jidaga Mutt</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://192.168.43.33:8100" />
+    <content original-src="index.html" src="http://192.168.99.1:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -56,6 +56,7 @@
     </platform>
     <preference name="SplashScreenDelay" value="3000" />
     <allow-navigation href="http://192.168.43.33:8100" />
+    <allow-navigation href="http://192.168.99.1:8100" />
     <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.5.4" />
     <plugin name="cordova-plugin-device" spec="^1.1.4" />

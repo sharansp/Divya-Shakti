@@ -23,49 +23,42 @@ import { HomePage } from '../pages/home/home';
 export class MyApp {
   @ViewChild(Nav) navCtrl: Nav;
     rootPage:any = HomePage;
-    Nav;
+    showedAlert: boolean;
 
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+
+  constructor( platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-      
+      this.showedAlert = false;
+                      // Confirm exit
+        platform.registerBackButtonAction(() => {
+          console.log(this.navCtrl.length() )
+            if (this.navCtrl.length() == 1) {
+              console.log(this.navCtrl);
+                if (!this.showedAlert) {
+                  console.log(this.navCtrl.getActive().component.name);
+                  if(this.navCtrl.getActive().component.name!='HomePage'){
+                      this.navCtrl.setRoot(HomePage);
+                      this.navCtrl.popToRoot();
+                  }else{
+                      platform.exitApp();
+                  }
+                } else {
+                    this.showedAlert = false;
+                    //confirmAlert.dismiss();
+                }
+            }
+            else{
+                this.navCtrl.pop();  
+            }
+            
+        });
 
-       // var lastTimeBackPress = 0;
-       //            var timePeriodToExit  = 2000;
 
-                  platform.registerBackButtonAction(() => {
-                    /*if (ServicesProvider.isDeviceBackExit) {
-                          //Double check to exit app
-                          if (new Date().getTime() - lastTimeBackPress < timePeriodToExit) {
-                              this.platform.exitApp(); //Exit from app
-                          } else {
-                              let toast = this.toastCtrl.create({
-                                  message:  'Press back again to exit App?',
-                                  duration: 3000,
-                                  position: 'bottom'
-                              });
-                              toast.present();
-                              lastTimeBackPress = new Date().getTime();
-                          }
-                      }*/ //else {
-                          // go to previous page
-                          //this.nav.pop({});
-                          window.history.back();
-                         // this.nav.push(MenuPage)
-                          /*if(ServicesProvider.NAVCTRL){
-                              ServicesProvider.NAVCTRL.pop() // it will remove details page view only.
-                          }
-                          else{
-                              this.Nav.pop() // it will remove entire Menupage and closes app.
-                          }*/
-                          //return false;
-                 //     }
-
-                  });
     });
   }
   
