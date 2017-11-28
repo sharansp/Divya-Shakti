@@ -85,7 +85,7 @@ export class EventsPage {
     if (val && val.trim() != '') {
       this.data = this.data.filter((item) => {
 
-        return ((item['Place'].toLowerCase().indexOf(val.toLowerCase()) > -1) || (item['Date_Month'].toLowerCase().indexOf(val.toLowerCase()) > -1));
+        return ((item['Place'].toLowerCase().indexOf(val.toLowerCase()) > -1) || (item['Date'].toLowerCase().indexOf(val.toLowerCase()) > -1));
       })
     }
   }
@@ -93,7 +93,7 @@ export class EventsPage {
   showEventToggle(evt){
   	var oTable = document.getElementById('idTable');
   	var oList = document.getElementById('idListView');
-  	var oBtnToggle= document.getElementById('idButtonToggle');
+  	//var oBtnToggle= document.getElementById('idButtonToggle');
 
   	/*if(!oTable.hidden){
   		oBtnToggle.textContent = "Show Events List";
@@ -103,6 +103,10 @@ export class EventsPage {
 
   	oTable.hidden = !oTable.hidden;
   	oList.hidden = !oList.hidden;
+  }
+
+  goToEventsDetail(param){
+  	
   }
 
 }

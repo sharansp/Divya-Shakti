@@ -28,13 +28,13 @@
   </ion-searchbar>  
 
   <ion-row justify-content-center>
-    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+    <ion-col col-50 style="font-weight: bolder;text-align:center;font-size: large;">
       Date
     </ion-col>
-    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+    <ion-col col-50 style="font-weight: bolder;text-align:center;font-size: large;">
       Description
     </ion-col>
-    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+    <ion-col col-50 style="font-weight: bolder;text-align:center;font-size: large;">
       Place
     </ion-col>
   </ion-row>
@@ -60,18 +60,20 @@
    
 
   <ion-list *ngFor="let hero of data">
-    <ion-item class="icon-item-bg" color="positive" on-click="goToSriSiddalingaAppaji()" >
+    <ion-item class="icon-item-bg" style="background-color:#f5ecec;" color="positive" on-click="goToEventsDetail(hero)" >
       <!-- <ion-thumbnail item-left>
         <img src="assets/img/SiddalingaAppaji.jpg" />
       </ion-thumbnail> -->
-      <h1 class="jagadguruHeader"> 
+      <h1  style="color:#ff7500;font-size: 25px;"> 
         {{hero.Date}} 
       </h1>
-      <h6 class="jagadguruHeader"> 
+      
+      <p class="pwrap">{{hero.Description}} </p>
+      <h6     style="font-size: larger;"> 
         {{hero.Place}} 
       </h6>
-      <p class="pwrap">{{hero.Description}} </p>
     </ion-item>
+    <hr>
   </ion-list>
 
   </ion-grid>
