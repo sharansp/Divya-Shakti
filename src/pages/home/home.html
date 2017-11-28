@@ -22,36 +22,59 @@
             <img [src]="slide" on-click="goToSlideImage(slide)">
          </ion-slide> 
       </ion-slides>
-
-       
-
    </div>
 
-   <div class="row" id="buttonsFirstWrapper1">
              
-             <!-- <ion-img width="85" height="85" (click)="goToEvents()" src="assets/img/fair-stand.png"></ion-img>
-              <ion-img width="85" height="85" on-click="goToJagadgurus()" src="assets/img/events.jpg"></ion-img>
+             <!-- <ion-img width="120" height="120" (click)="goToEvents()" src="assets/img/fair-stand.png"></ion-img>
+              <ion-img width="120" height="120" on-click="goToJagadgurus()" src="assets/img/events.jpg"></ion-img>
 
-             <ion-img width="85" height="85" (click)="goToEvents()" src="assets/img/Gallery.png"></ion-img> -->
-           
-              <ion-img width="85" height="85" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
+             <ion-img width="120" height="120" (click)="goToEvents()" src="assets/img/Gallery.png"></ion-img> -->
+            <!-- <div class="col col-25"  >
+              <ion-img width="120" height="120" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
                 
               </ion-img>
+            </div>
 
-              <ion-img width="85" height="85" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
-                
-              </ion-img>
+             <div class="col col-25"  >
+              <ion-img width="120" height="120" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
+            </div>
 
-              <ion-img width="85" height="85" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
-                
-              </ion-img>
+             <div class="col col-25"  >
+              <ion-img width="120" height="120" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
+            </div>
 
-              <ion-img width="85" height="85" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png">
-                
+             <div class="col col-25"  >
+              <ion-img width="120" height="120" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png">
               </ion-img>
+            </div>
             
-        </div> 
+        </div>  -->
 
+
+    
+        <div><ion-grid>
+  
+  <ion-row justify-content-center >
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+       <ion-img width="120" height="120" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
+       </ion-img>
+    </ion-col>
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+      <ion-img width="120" height="120" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row justify-content-center >
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+      <ion-img width="120" height="120" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
+    </ion-col>
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+      <ion-img width="120" height="120" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png">
+      </ion-img>
+    </ion-col>
+  </ion-row>
+
+</ion-grid></div>
   
 
    <div   id="gallery-spacer0" style="    background-color: #87deda;

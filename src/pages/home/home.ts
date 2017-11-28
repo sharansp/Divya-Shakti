@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { EventsPage } from '../events/events';
 import { SankalpaYatrePage } from '../sankalpa-yatre/sankalpa-yatre';
 import { JagadgurusPage } from '../jagadgurus/jagadgurus';
+import { GalleryPage } from '../gallery/gallery';
 
 @Component({
   selector: 'page-home',
@@ -35,9 +36,14 @@ export class HomePage {
     this.navCtrl.push(JagadgurusPage);
   }
 
+  goToGallery(params){
+    if (!params) params = {};
+     this.navCtrl.push(GalleryPage); 
+  }
+
   goToSlideImage(params){
-    if(params.includes('devotee-reg')){
-     this.navCtrl.push(JagadgurusPage); 
+    if(params.includes('sanklpa-yatre')){
+     this.navCtrl.push(SankalpaYatrePage); 
     }
 
   }
