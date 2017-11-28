@@ -34,7 +34,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-      this.showedAlert = false;
+      /*this.showedAlert = false;
                       // Confirm exit
         platform.registerBackButtonAction(() => {
           console.log(this.navCtrl.length() )
@@ -43,7 +43,7 @@ export class MyApp {
                 if (!this.showedAlert) {
                   console.log(this.navCtrl.getActive().component.name);
                   if(this.navCtrl.getActive().component.name=='HomePage'){
-                      alert(this.navCtrl.getActive().component.name);
+                      //alert(this.navCtrl.getActive().component.name);
                        platform.exitApp();
                   }
                   // else if(this.navCtrl.getActive().component.name!='HomePage'){
@@ -51,7 +51,7 @@ export class MyApp {
                   //     this.navCtrl.popToRoot();
                   // }
                   else{
-                    alert(this.navCtrl.getActive().component.name);
+                    //alert(this.navCtrl.getActive().component.name);
                       this.navCtrl.setRoot(HomePage);
                   }
                 } else {
@@ -63,7 +63,7 @@ export class MyApp {
                 this.navCtrl.pop();  
             }
             
-        });
+        });*/
 
 
     });
