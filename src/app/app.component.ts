@@ -14,6 +14,7 @@ import { AbhishekSevaPage } from '../pages/abhishek-seva/abhishek-seva';
 import { ContactsPage } from '../pages/contacts/contacts';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { HomePage } from '../pages/home/home';
+import { SankalpaYatrePage } from '../pages/sankalpa-yatre/sankalpa-yatre';
 
 
 
@@ -71,6 +72,9 @@ export class MyApp {
   goToJagadgurus(params){
     if (!params) params = {};
     this.navCtrl.setRoot(JagadgurusPage);
+  }goToSankalpaYatre(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(SankalpaYatrePage);
   }goToSriSiddalingaAppaji(params){
     if (!params) params = {};
     this.navCtrl.setRoot(SriSiddalingaAppajiPage);

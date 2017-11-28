@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { EventsPage } from '../events/events';
+import { SankalpaYatrePage } from '../sankalpa-yatre/sankalpa-yatre';
 import { JagadgurusPage } from '../jagadgurus/jagadgurus';
 
 @Component({
@@ -21,6 +22,11 @@ export class HomePage {
   goToEvents(params){
     if (!params) params = {};
     this.navCtrl.push(EventsPage);
+  }
+
+  goToSankalpaYatre(params){
+    if (!params) params = {};
+    this.navCtrl.push(SankalpaYatrePage);
   }
   
   goToJagadgurus(params){
