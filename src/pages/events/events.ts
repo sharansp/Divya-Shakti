@@ -38,7 +38,7 @@ export class EventsPage {
 		},
 		{
 			
-			"Description": "774- Jangamara Pada Pooje & Swamy Vivekananda Jayathi",
+			"Description": "770- Jangamara Pada Pooje & Swamy Vivekananda Jayathi",
 			"Place": "Mugalkhod",
 			"Date": "January 13",
 			"Time": ""
@@ -106,7 +106,7 @@ export class EventsPage {
   }
 
   goToEventsDetail(param){
-  	
+
   }
 
 }
