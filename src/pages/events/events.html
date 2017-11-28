@@ -10,8 +10,22 @@
 </ion-header>
 <ion-content padding id="page1" style="background-color:#f5ecec;">
 
- <ion-grid>
-  
+  <div>
+    <button ion-button full id="idButtonToggle" on-click="showEventToggle(param)">
+      Show in Other View
+    </button>
+  </div>
+
+
+ <ion-grid id="idTable" hidden="false">
+
+  <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="getItems($event)"
+    (ionCancel)="onCancel($event)"
+    placeholder="Search mutts here">
+  </ion-searchbar>  
 
   <ion-row justify-content-center>
     <ion-col col-50 style="font-weight: bolder;font-size: large;">
@@ -25,17 +39,11 @@
     </ion-col>
   </ion-row>
 
-  <ion-searchbar
-    [(ngModel)]="myInput"
-    [showCancelButton]="shouldShowCancel"
-    (ionInput)="getItems($event)"
-    (ionCancel)="onCancel($event)"
-    placeholder="Search mutts here">
-  </ion-searchbar>
+
 
   <ion-row justify-content-center *ngFor="let hero of data">
     <ion-col col-50 style="font-size: large;color: black;text-align:center;">
-     {{hero.Date_Month}} {{hero.Date_Day}}
+     {{hero.Date}}
     </ion-col>
     <ion-col col-50 style="font-size: large;color: black;text-align:center;">
       {{hero.Description}}
@@ -47,7 +55,28 @@
 
  
 </ion-grid>
+
+  <ion-grid id="idListView">
+   
+
+  <ion-list *ngFor="let hero of data">
+    <ion-item class="icon-item-bg" color="positive" on-click="goToSriSiddalingaAppaji()" >
+      <!-- <ion-thumbnail item-left>
+        <img src="assets/img/SiddalingaAppaji.jpg" />
+      </ion-thumbnail> -->
+      <h1 class="jagadguruHeader"> 
+        {{hero.Date}} 
+      </h1>
+      <h6 class="jagadguruHeader"> 
+        {{hero.Place}} 
+      </h6>
+      <p class="pwrap">{{hero.Description}} </p>
+    </ion-item>
+  </ion-list>
+
+  </ion-grid>
   <!-- <button id="events-button1" ion-button color="royal" block style="color:#FFFFFF;border-radius:24px 24px 24px 24px;" href-inappbrowser="http://bp9news.com/mmt-run-to-basava-purana-on-the-siddharameshwar-sankalpa-yatra1122/">
     ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪ ಯಾತ್ರೆ
   </button> -->
+
 </ion-content>

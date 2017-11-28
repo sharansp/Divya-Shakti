@@ -17,28 +17,59 @@ export class EventsPage {
   	this.data =  [
 		{
 			
-			"Description": "ಗುರುಪೂರ್ಣಿಮಾ ಕಾರ್ಯಕ್ರಮ ದಿ. 09-07-2017 ರಂದು",
-			"Place": "Belgaum",
-			"Date_Month": "JUL",
-			"Date_Day": "9"
-		},{
-			
-			"Description": "ಅಗ್ಗಿ ಜಾತ್ರಾ ಮಹೋತ್ಸವ ಸುಕ್ಷೇತ್ರ ಮುಕ್ತಿ ಮಂದಿರ ಮುಗಳಖೋಡದಲ್ಲಿ",
+			"Description": "33rd Guruvandana Program",
 			"Place": "Mugalkhod",
-			"Date_Month": "APR",
-			"Date_Day": "4"
-		},{
+			"Date": "December 2",
+			"Time": "Evening 6 - 9 PM"
+		},
+		{
 			
-			"Description": "ಶ್ರೀ ಷಡಕ್ಷರಿ ಶಿವಯೋಗಿ ಸಿದ್ಧರಾಮೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳವರ 13ನೇ ಪುಣ್ಯಾರಾಧನ",
+			"Description": "Poornima & Cardinally Ceremony Pujya Shri Yallalinga Appaji",
 			"Place": "Mugalkhod",
-			"Date_Month": "FEB",
-			"Date_Day": "13"
-		},{
+			"Date": "January 2",
+			"Time": ""
+		},
+		{
 			
-			"Description": "ಸದ್ಗುರು ಶ್ರೀ ಯಲ್ಲಾಲಿಂಗ ಮಹಾಪ್ರಭುಗಳ 31ನೇ ಪುಣ್ಯಾರಾಧನೆ ದಿ.12-1-2017",
+			"Description": "Pada yatre from Koligud to Mugalkhod",
 			"Place": "Mugalkhod",
-			"Date_Month": "JAN",
-			"Date_Day": "12"
+			"Date": "January 12",
+			"Time": ""
+		},
+		{
+			
+			"Description": "774- Jangamara Pada Pooje & Swamy Vivekananda Jayathi",
+			"Place": "Mugalkhod",
+			"Date": "January 13",
+			"Time": ""
+		},
+		{
+			
+			"Description": "Anubhava Mantapa Loka arpanna & Pushpa arpane",
+			"Place": "Mugalkhod",
+			"Date": "January 14",
+			"Time": ""
+		},
+		{
+			
+			"Description": "Amavasya, Pujya Appaji in Mugalkhod",
+			"Place": "Mugalkhod",
+			"Date": "January 16",
+			"Time": ""
+		},
+		{
+			
+			"Description": "Poornima  Pujya Appaji in Jidga",
+			"Place": "Jidaga",
+			"Date": "January 31",
+			"Time": ""
+		},
+		{
+			
+			"Description": "Sri Sadalshri Siddhrameshwara Punya Aradhyane & Pushparpane",
+			"Place": "",
+			"Date": "Feb 02 - 06th",
+			"Time": ""
 		}
 			]
   }
@@ -58,5 +89,20 @@ export class EventsPage {
       })
     }
   }
-  
+ 
+  showEventToggle(evt){
+  	var oTable = document.getElementById('idTable');
+  	var oList = document.getElementById('idListView');
+  	var oBtnToggle= document.getElementById('idButtonToggle');
+
+  	/*if(!oTable.hidden){
+  		oBtnToggle.textContent = "Show Events List";
+  	}else{
+  		oBtnToggle.textContent = "Show Events Table";
+  	}*/
+
+  	oTable.hidden = !oTable.hidden;
+  	oList.hidden = !oList.hidden;
+  }
+
 }

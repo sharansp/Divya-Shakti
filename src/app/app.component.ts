@@ -42,12 +42,15 @@ export class MyApp {
                 if (!this.showedAlert) {
                   console.log(this.navCtrl.getActive().component.name);
                   if(this.navCtrl.getActive().component.name=='HomePage'){
+                      alert(this.navCtrl.getActive().component.name);
                        platform.exitApp();
                   }
-                  /*else if(this.navCtrl.getActive().component.name!='HomePage'){
-                      this.navCtrl.setRoot(HomePage);
-                      this.navCtrl.popToRoot();
-                  }*/else{
+                  // else if(this.navCtrl.getActive().component.name!='HomePage'){
+                  //     this.navCtrl.setRoot(HomePage);
+                  //     this.navCtrl.popToRoot();
+                  // }
+                  else{
+                    alert(this.navCtrl.getActive().component.name);
                       this.navCtrl.setRoot(HomePage);
                   }
                 } else {
