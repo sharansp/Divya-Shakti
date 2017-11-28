@@ -15,12 +15,18 @@
 
 <ion-grid>
   
-
+<ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel"
+    (ionInput)="getItems($event)"
+    (ionCancel)="onCancel($event)"
+    placeholder="Search mutts here">
+  </ion-searchbar>
   <ion-row justify-content-center>
-    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+    <ion-col col-50 style="font-weight: bolder;font-size: large;text-align:center;">
       Place
     </ion-col>
-    <ion-col col-50 style="font-weight: bolder;font-size: large;">
+    <ion-col col-50 style="font-weight: bolder;font-size: large;text-align:center;">
       Address
     </ion-col>
     <!-- <ion-col >
@@ -28,16 +34,10 @@
     </ion-col> -->
   </ion-row>
 
-  <ion-searchbar
-	  [(ngModel)]="myInput"
-	  [showCancelButton]="shouldShowCancel"
-	  (ionInput)="getItems($event)"
-	  (ionCancel)="onCancel($event)"
-    placeholder="search mutts here">
-  </ion-searchbar>
+  
 
   <ion-row justify-content-center *ngFor="let hero of data">
-    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+    <ion-col col-50 style="font-size: larger;color: black;text-align:center;line-height: 130px;font-weight: 500;">
       {{hero.Place}}
     </ion-col>
     <ion-col col-50 style="font-size: large;color: black;text-align:center;">

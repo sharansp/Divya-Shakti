@@ -41,11 +41,14 @@ export class MyApp {
               console.log(this.navCtrl);
                 if (!this.showedAlert) {
                   console.log(this.navCtrl.getActive().component.name);
-                  if(this.navCtrl.getActive().component.name!='HomePage'){
+                  if(this.navCtrl.getActive().component.name=='HomePage'){
+                       platform.exitApp();
+                  }
+                  /*else if(this.navCtrl.getActive().component.name!='HomePage'){
                       this.navCtrl.setRoot(HomePage);
                       this.navCtrl.popToRoot();
-                  }else{
-                      platform.exitApp();
+                  }*/else{
+                      this.navCtrl.setRoot(HomePage);
                   }
                 } else {
                     this.showedAlert = false;
