@@ -9,11 +9,19 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page1" style="background-color:#f5ecec;">
+   <!--  <ion-label>Kannada</ion-label>
+    <ion-toggle value="Eng" id="idBtnToggle" (ionChange)="changeEventL10n(value)" checked="true" color="energized"></ion-toggle> -->
 
+<!-- <button ion-button round>Round Button</button> -->
   <div>
-    <button ion-button full id="idButtonToggle" style="background-color:#f5ecec;color: red;" on-click="showEventToggle(param)">
-      Show in Other View
+    <button ion-button round id="idButtonToggle" style="background-color:#f5ecec;color: red;" on-click="showEventToggle(param)">
+      Change View
     </button>
+
+    <button ion-button round id="idBtnToggle" style="background-color:#f5ecec;color: blue;" on-click="changeEventL10n(param)">
+      Kannada
+    </button>
+
   </div>
 
 
@@ -41,12 +49,14 @@
 
 
 
-  <ion-row justify-content-center *ngFor="let hero of data">
+  <ion-row justify-content-center id="idTableRow"  *ngFor="let hero of data">
     <ion-col col-50 style="font-size: large;color: black;text-align:center;">
      {{hero.Date}}
     </ion-col>
     <ion-col col-50 style="font-size: large;color: black;text-align:center;">
       {{hero.Description}}
+      {{hero.SubDesc}}
+      {{hero.Time}}
     </ion-col>
     <ion-col col-50 style="font-size: large;color: black;text-align:center;">
       {{hero.Place}}
@@ -59,16 +69,20 @@
   <ion-grid id="idListView">
    
 
-  <ion-list *ngFor="let hero of data">
+  <ion-list id="idListViewList" *ngFor="let hero of data">
     <ion-item class="icon-item-bg" style="background-color:#f5ecec;" color="positive" on-click="goToEventsDetail(hero)" >
       <!-- <ion-thumbnail item-left>
         <img src="assets/img/SiddalingaAppaji.jpg" />
       </ion-thumbnail> -->
+
       <h1  style="color:#ff7500;font-size: 25px;"> 
         {{hero.Date}} 
       </h1>
       
-      <p class="pwrap">{{hero.Description}} </p>
+      <p >{{hero.Description}} </p>
+      <p >{{hero.SubDesc}} </p>
+      <p >{{hero.Time}} </p>
+      
       <h6     style="font-size: larger;"> 
         {{hero.Place}} 
       </h6>
