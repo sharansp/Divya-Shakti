@@ -13,16 +13,22 @@
     <ion-toggle value="Eng" id="idBtnToggle" (ionChange)="changeEventL10n(value)" checked="true" color="energized"></ion-toggle> -->
 
 <!-- <button ion-button round>Round Button</button> -->
-  <div>
-    <button ion-button round id="idButtonToggle" style="background-color:#f5ecec;color: red;" on-click="showEventToggle(param)">
+<ion-grid>
+  <ion-row justify-content-center >
+   
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+     <button ion-button round id="idButtonToggle" style="background-color:#f5ecec;color: red;" on-click="showEventToggle(param)">
       Change View
     </button>
-
-    <button ion-button round id="idBtnToggle" style="background-color:#f5ecec;color: blue;" on-click="changeEventL10n(param)">
+    </ion-col>
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+      <button ion-button round id="idBtnToggle" style="background-color:#f5ecec;color: blue;" on-click="changeEventL10n(param)">
       Kannada
     </button>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
 
-  </div>
 
 
  <ion-grid id="idTable" hidden="false">
@@ -36,7 +42,7 @@
   </ion-searchbar>  
 
   <ion-row justify-content-center>
-    <ion-col col-50 style="font-weight: bolder;text-align:center;font-size: large;">
+    <ion-col col-50 style="font-weight: bolder;text-align:left;font-size: large;">
       Date
     </ion-col>
     <ion-col col-50 style="font-weight: bolder;text-align:center;font-size: large;">
@@ -50,7 +56,7 @@
 
 
   <ion-row justify-content-center id="idTableRow"  *ngFor="let hero of data">
-    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+    <ion-col col-50 style="font-size: large;color: black;text-align:left;">
      {{hero.Date}}
     </ion-col>
     <ion-col col-50 style="font-size: large;color: black;text-align:center;">

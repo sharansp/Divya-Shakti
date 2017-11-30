@@ -19,10 +19,10 @@ export class EventsPage {
   	this.Kannada =  [
 		{
 			
-			"Description": "ಪ ಪೂ ಶ್ರೀ ಷ ಶಿ ಡಾ ಮುರುಘರಾಜೇಂದ್ರ ಮಹಾಸ್ವಾಮಿಗಳವರ  ",
-			"SubDesc": "33ನೇ ಗುರುವಂದನ",
+			"Description": "ಪ ಪೂ ಶ್ರೀ ಷ ಶಿ ಡಾ ಮುರುಘರಾಜೇಂದ್ರ",
+			"SubDesc": "ಮಹಾಸ್ವಾಮಿಗಳವರ 33ನೇ ಗುರುವಂದನ",
 			"Place": "ಮುಗುಳಖೋಡ",
-			"Date": "ಡಿಸೆಂಬರ 2",
+			"Date": "ಡಿಸೆಂಬರ2",
 			"Time": ""
 		},
 		{
@@ -35,11 +35,11 @@ export class EventsPage {
 		},
 		{
 			
-			"Description": "ಸದ್ಗುರು ಶ್ರೀ ಯಲ್ಲಾಲಿಂಗ ಮಹಾಪ್ರಭುಗಳ  ಪುಣ್ಯಾರಾಧನೆ ",
-			"SubDesc": "ಮತ್ತು ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪ",
+			"Description": "ಸದ್ಗುರು ಶ್ರೀ ಯಲ್ಲಾಲಿಂಗ ಮಹಾಪ್ರಭುಗಳ",
+			"SubDesc": "ಪುಣ್ಯಾರಾಧನೆ ಮತ್ತು ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ",
 			"Place": "ಮುಗುಳಖೋಡ",
 			"Date": "ಜನೆವರಿ  12, 13, 14",
-			"Time": ""
+			"Time": "ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪ ಜರುಗಲಿದೆ"
 		},
 		/*{
 			
@@ -75,8 +75,8 @@ export class EventsPage {
 		},
 		{
 			
-			"Description": "ಶ್ರೀ ಷಡಕ್ಷರಿ ಶಿವಯೋಗಿ ಸಿದ್ಧರಾಮೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳವರ  ",
-			"SubDesc": " ಪುಣ್ಯಾರಾಧನ",
+			"Description": "ಶ್ರೀ ಷಡಕ್ಷರಿ ಶಿವಯೋಗಿ ಸಿದ್ಧರಾಮೇಶ್ವರ",
+			"SubDesc": "ಮಹಾಸ್ವಾಮಿಗಳವರ ಪುಣ್ಯಾರಾಧನ",
 			"Place": "",
 			"Date": "ಫೆಬ್ರವರಿ 02 - 06th",
 			"Time": ""
@@ -86,15 +86,15 @@ export class EventsPage {
   	this.English =  [
 		{
 			
-			"Description": "Param Pujya Shri S S Dr Murugharajendra ",
+			"Description": "Param Pujya Shri S S Dr Murugharajendra",
 			"SubDesc": "Mahaswamiji 33rd Guru Vandana Programm",
 			"Place": "Mugalkhod",
-			"Date": "December 2",
+			"Date": "Dec 2",
 			"Time": "Evening 6 - 9 PM"
 		},
 		{
 			
-			"Description": "Poornima & Cardle Ceremony of Pujya ",
+			"Description": "Poornima & Cardle Ceremony of Pujya",
 			"SubDesc": "Yallalinga Appaji",
 			"Place": "Mugalkhod",
 			"Date": "January 2",
@@ -102,11 +102,11 @@ export class EventsPage {
 		},
 		{
 			
-			"Description": "Pujya Yallalinga Mahaswamiji Punya Aradhanye & !!",
-			"SubDesc": "Shri Siddharameshwara Sankalpa yatre !! koligudda",
+			"Description": "Pujya Yallalinga Mahaswamiji Punyaradhane!!",
+			"SubDesc": "Shri Siddharameshwara Sankalpa yatre !!",
 			"Place": "Mugalkhod",
 			"Date": "January 12, 13, 14",
-			"Time": "Shrigala Nade Bhaktara Bhaktiya Kade"
+			"Time": "Shrigala Nade Bhaktara Bhaktiya Kade!!"
 		},
 		/*{
 			
@@ -142,8 +142,8 @@ export class EventsPage {
 		},
 		{
 			
-			"Description": "Sri Sadalshri Siddhrameshwara Punya Aradhyane ",
-			"SubDesc": " hagu Pushparpane",
+			"Description": "Sri Sadalshri Siddhrameshwara ",
+			"SubDesc": "Punyaradhyane hagu Pushparpane",
 			"Place": "",
 			"Date": "Feb 02 - 06th",
 			"Time": ""
