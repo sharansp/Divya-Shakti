@@ -21,15 +21,15 @@ export class EventsPage {
 			
 			"Description": "ಪ ಪೂ ಶ್ರೀ ಷ ಶಿ ಡಾ ಮುರುಘರಾಜೇಂದ್ರ ಮಹಾಸ್ವಾಮಿಗಳವರ  ",
 			"SubDesc": "33ನೇ ಗುರುವಂದನ",
-			"Place": "Mugalkhod",
-			"Date": "December 2",
+			"Place": "ಮುಗುಳಖೋಡ",
+			"Date": "ಡಿಸೆಂಬರ 2",
 			"Time": ""
 		},
 		{
 			
 			"Description": "ಪೂರ್ಣಿಮಾ ಮತ್ತು ತೊಟ್ಟಿಲು ಸಮಾರಂಭ ಪೂಜಾ ",
 			"SubDesc": " ಶ್ರೀ ಯಲ್ಲಲಿಂಗ ಅಪಾಜಿ ",
-			"Place": "Mugalkhod",
+			"Place": "ಮುಗುಳಖೋಡ",
 			"Date": "ಜನೆವರಿ 2",
 			"Time": ""
 		},
@@ -37,7 +37,7 @@ export class EventsPage {
 			
 			"Description": "ಸದ್ಗುರು ಶ್ರೀ ಯಲ್ಲಾಲಿಂಗ ಮಹಾಪ್ರಭುಗಳ  ಪುಣ್ಯಾರಾಧನೆ ",
 			"SubDesc": "ಮತ್ತು ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪ",
-			"Place": "Mugalkhod",
+			"Place": "ಮುಗುಳಖೋಡ",
 			"Date": "ಜನೆವರಿ  12, 13, 14",
 			"Time": ""
 		},
@@ -59,17 +59,17 @@ export class EventsPage {
 		},*/
 		{
 			
-			"Description": "Amavasya, Pujya Appaji in Mugalkhod",
+			"Description": "ಅಮವಾಸ್ಯೆ: ಪೂಜ್ಯ  ಅಪ್ಪಾಜಿ - ಮುಗುಳಖೋಡ",
 			"SubDesc": "",
-			"Place": "Mugalkhod",
+			"Place": "ಮುಗುಳಖೋಡ",
 			"Date": "ಜನೆವರಿ 16",
 			"Time": ""
 		},
 		{
 			
-			"Description": "Poornima  Pujya Appaji in Jidga",
+			"Description": "ಹುಣ್ಣಿಮೆ:  ಪೂಜ್ಯ  ಅಪ್ಪಾಜಿ - ಜಿಡಗಾ",
 			"SubDesc": "",
-			"Place": "Jidaga",
+			"Place": "ಜಿಡಗಾ",
 			"Date": "ಜನೆವರಿ 31",
 			"Time": ""
 		},
@@ -78,7 +78,7 @@ export class EventsPage {
 			"Description": "ಶ್ರೀ ಷಡಕ್ಷರಿ ಶಿವಯೋಗಿ ಸಿದ್ಧರಾಮೇಶ್ವರ ಮಹಾಸ್ವಾಮಿಗಳವರ  ",
 			"SubDesc": " ಪುಣ್ಯಾರಾಧನ",
 			"Place": "",
-			"Date": "Feb 02 - 06th",
+			"Date": "ಫೆಬ್ರವರಿ 02 - 06th",
 			"Time": ""
 		}
 			];
