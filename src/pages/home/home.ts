@@ -13,10 +13,14 @@ export class HomePage {
 	slides = [];
 
   constructor(public navCtrl: NavController) {
-  	this.slides.push('assets/img/sanklpa-yatre-6.jpg');
-    this.slides.push('assets/img/sanklpa-yatre.jpg');
-    //this.slides.push('assets/img/sanklpa-yatre-4.jpg');
-  	this.slides.push('assets/img/sanklpa-yatre-5.jpg');
+    this.slides.push('assets/img/sankalpa-yatre-1.jpg');
+    this.slides.push('assets/img/sankalpa-yatre-2.jpg');
+    this.slides.push('assets/img/sankalpa-yatre-3.jpg');
+  	this.slides.push('assets/img/sankalpa-yatre-4.jpg');
+    this.slides.push('assets/img/anubhava-manatapa-1.jpg');
+    this.slides.push('assets/img/anubhava-manatapa-2.jpg');
+    this.slides.push('assets/img/anubhava-manatapa-3.jpg');
+    this.slides.push('assets/img/anubhava-manatapa-4.jpg');
   	/*var audio = new Audio('/assets/audio/guru-brahma.mp3');
   	audio.play();*/
   }
