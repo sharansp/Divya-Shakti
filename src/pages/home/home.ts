@@ -16,7 +16,7 @@ export class HomePage {
     this.slides.push('assets/img/sankalpa-yatre-1.jpg');
     this.slides.push('assets/img/sankalpa-yatre-2.jpg');
     this.slides.push('assets/img/sankalpa-yatre-3.jpg');
-  	this.slides.push('assets/img/sankalpa-yatre-4.jpg');
+  	//this.slides.push('assets/img/sankalpa-yatre-4.jpg');
     this.slides.push('assets/img/anubhava-manatapa-1.jpg');
     this.slides.push('assets/img/anubhava-manatapa-2.jpg');
     this.slides.push('assets/img/anubhava-manatapa-3.jpg');

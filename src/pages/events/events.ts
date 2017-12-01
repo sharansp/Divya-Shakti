@@ -77,7 +77,7 @@ export class EventsPage {
 			
 			"Description": "ಶ್ರೀ ಷಡಕ್ಷರಿ ಶಿವಯೋಗಿ ಸಿದ್ಧರಾಮೇಶ್ವರ",
 			"SubDesc": "ಮಹಾಸ್ವಾಮಿಗಳವರ ಪುಣ್ಯಾರಾಧನ",
-			"Place": "",
+			"Place": "ಜಿಡಗಾ",
 			"Date": "ಫೆಬ್ರವರಿ 02 - 06th",
 			"Time": ""
 		}
@@ -144,7 +144,7 @@ export class EventsPage {
 			
 			"Description": "Sri Sadalshri Siddhrameshwara ",
 			"SubDesc": "Punyaradhyane hagu Pushparpane",
-			"Place": "",
+			"Place": "Jidaga",
 			"Date": "Feb 02 - 06th",
 			"Time": ""
 		}
