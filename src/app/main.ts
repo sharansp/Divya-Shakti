@@ -3,8 +3,8 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app.module';
 
 
-var audio = new Audio('/assets/audio/guru-brahma.mp3');
-audio.play();
+/*var audio = new Audio('/assets/audio/guru-brahma.mp3');
+audio.play();*/
 
 //Audio playing in the background
 /*var audio = new Audio('/assets/audio/guru-brahma.mp3');
