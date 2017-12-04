@@ -14,6 +14,7 @@ import { AbhishekSevaPage } from '../pages/abhishek-seva/abhishek-seva';
 import { ContactsPage } from '../pages/contacts/contacts';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { HomePage } from '../pages/home/home';
+import { SankalpaYatrePage } from '../pages/sankalpa-yatre/sankalpa-yatre';
 
 
 
@@ -33,7 +34,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-      this.showedAlert = false;
+      /*this.showedAlert = false;
                       // Confirm exit
         platform.registerBackButtonAction(() => {
           console.log(this.navCtrl.length() )
@@ -41,11 +42,17 @@ export class MyApp {
               console.log(this.navCtrl);
                 if (!this.showedAlert) {
                   console.log(this.navCtrl.getActive().component.name);
-                  if(this.navCtrl.getActive().component.name!='HomePage'){
+                  if(this.navCtrl.getActive().component.name=='HomePage'){
+                      //alert(this.navCtrl.getActive().component.name);
+                       platform.exitApp();
+                  }
+                  // else if(this.navCtrl.getActive().component.name!='HomePage'){
+                  //     this.navCtrl.setRoot(HomePage);
+                  //     this.navCtrl.popToRoot();
+                  // }
+                  else{
+                    //alert(this.navCtrl.getActive().component.name);
                       this.navCtrl.setRoot(HomePage);
-                      this.navCtrl.popToRoot();
-                  }else{
-                      platform.exitApp();
                   }
                 } else {
                     this.showedAlert = false;
@@ -56,7 +63,7 @@ export class MyApp {
                 this.navCtrl.pop();  
             }
             
-        });
+        });*/
 
 
     });
@@ -65,6 +72,9 @@ export class MyApp {
   goToJagadgurus(params){
     if (!params) params = {};
     this.navCtrl.setRoot(JagadgurusPage);
+  }goToSankalpaYatre(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(SankalpaYatrePage);
   }goToSriSiddalingaAppaji(params){
     if (!params) params = {};
     this.navCtrl.setRoot(SriSiddalingaAppajiPage);

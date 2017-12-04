@@ -17,44 +17,86 @@
       <h4 id="home-heading1" class="marquee" style="color:#FF0000;font-style:italic;text-align:center;text-decoration: none;">* ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠ : ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪವು 2018ರ ಜನೆವರಿ 12, 13,14 ರಂದು 
          ಜರುಗಲಿದೆ.      * ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠ : ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪವು 2018ರ ಜನೆವರಿ 12, 13,14 ರಂದು ಜರುಗಲಿದೆ
       </h4>
-      <ion-slides zoom="true" speed="2000" autoplay="10000" pager loop paginationType="bullets" style="width:100%;height: 100%;">
+      <ion-slides effect="fade" zoom="true" speed="1000" autoplay="8000" pager loop paginationType="bullets" style="width:100%;height: 100%;">
          <ion-slide *ngFor="let slide of slides">
             <img [src]="slide" on-click="goToSlideImage(slide)">
-         </ion-slide> 
+         </ion-slide>
       </ion-slides>
-
-        <div class="row" id="buttonsFirstWrapper1">
-             
-             <ion-img width="90" height="80" (click)="goToEvents()" src="assets/img/events-icon.png"></ion-img>
-              <ion-img width="90" height="80" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png"></ion-img>
-
-          
-             
-             <ion-img width="90" height="80" (click)="goToEvents()" src="assets/img/calendar (2).png"></ion-img>
-           
-              <ion-img width="90" height="80" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png"></ion-img>
-            
-        </div> 
-
    </div>
-
-   <!-- <div class="row" id="buttonsFirstWrapper" >
-      <div class="col col-50"  >
-         <img width="80" height="90" on-click="goToEvents()" src="assets/img/events-icon.png">
-
-         <ion-img width="80" height="90" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png"></ion-img>
-
+   <!-- <ion-img width="75" height="75" (click)="goToEvents()" src="assets/img/fair-stand.png"></ion-img>
+      <ion-img width="75" height="75" on-click="goToJagadgurus()" src="assets/img/events.jpg"></ion-img>
+      
+      <ion-img width="75" height="75" (click)="goToEvents()" src="assets/img/Gallery.png"></ion-img> -->
+   <!-- <div class="col col-25"  >
+      <ion-img width="75" height="75" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
+        
+      </ion-img>
       </div>
-   </div> -->
+      
+      <div class="col col-25"  >
+      <ion-img width="75" height="75" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
+      </div>
+      
+      <div class="col col-25"  >
+      <ion-img width="75" height="75" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
+      </div>
+      
+      <div class="col col-25"  >
+      <ion-img width="75" height="75" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png">
+      </ion-img>
+      </div>
+      
+      </div>  -->
+   <div>
+      <!-- <ion-grid> -->
+      <!-- <ion-row justify-content-center >
+         <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+           <ion-img class="circle-pic" width="75" height="75" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png">
+           </ion-img>
+         </ion-col>
+         
+         <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+           <ion-img width="75" height="75" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
+         </ion-col>
+         </ion-row>
+         
+         <ion-row justify-content-center >
+         <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+           <ion-img width="75" height="75" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
+         </ion-col>
+         
+         <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+            <ion-img width="75" height="75" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
+            </ion-img>
+         </ion-col>
+         </ion-row> -->
+      <ion-slides effect="slide" zoom="true" autoplay="null" pager  paginationType="bullets" style="border-radius: 30%;">
+         <ion-slide >    
 
-   <div   id="gallery-spacer0" style="    background-color: #87deda;
+            <ion-img width="75" height="75" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png" style="border-radius: 30%;">
+            </ion-img>
+         <!-- </ion-slide>
+         <ion-slide > -->
+            <ion-img width="75" height="75" on-click="goToEvents()" src="assets/img/events-icon.png" style="border-radius: 30%;"></ion-img>
+         <!-- </ion-slide>
+         <ion-slide > -->
+            <ion-img width="75" style="border-radius: 30%;" height="75" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
+            </ion-img>
+        <!--  </ion-slide>
+         <ion-slide > -->
+            
+            <ion-img width="75" style="border-radius: 30%;" height="75" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
+         </ion-slide>
+      </ion-slides>
+      <!-- </ion-grid> -->
+   </div>
+   <!-- <div   id="gallery-spacer0" style="    background-color: #87deda;
       font-size: medium;
       font-family: cursive;text-align: -webkit-center;">
       ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪ ಯಾತ್ರೆ
    </div>
    <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="gallery-video1">
       <iframe src="https://www.youtube.com/embed/YmXIsADxyQg?rel=0&amp;showinfo=0?modestbranding=1" frameborder="0" allowfullscreen width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-   </div>
-  
+   </div> -->
 </ion-content>
 <!--  <img src="http://commercepromote.com/mobile-app/contacts_btn.png" /> -->

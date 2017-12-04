@@ -23,282 +23,24 @@ export class MuttsAshramaPage {
       "Place":"Jidga",
       "Mutt_Address":"Sri Sri Siddarameshwara Anubhava Ashram, Nava Kallyana Mutt, Sukshetra Jidga, Tq. Aland, Dt. Gulbarga-585302."
    },
-   {
-      "Place":"Akkimardi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Akkimardi, Tal. Mudhol Dist. Bagalkot."
-   },
-   {
-      "Place":"Banahatti",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Banahatti, Tal. Jamakhandi Dist. Bagalkot."
-   },
-   {
-      "Place":"Hunasikatti",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Hunasikatti, Tal. Jamakhandi Dist. Bagalkot."
-   },
-   {
-      "Place":"Jamakhandi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Jamakhandi, Tal. Jamakhandi Dist. Bagalkot."
-   },
-   {
-      "Place":"Nagaral",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Nagaral, Tal. Mudhol Dist. Bagalkot."
-   },
-   {
-      "Place":"Sharadal",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Sharadal, Tal. Dist. Bagalkot."
-   },
-   {
-      "Place":"Tulsigeri",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Tulsigeri, Tal. Dist. Bagalkot."
-   },
-   {
-      "Place":"Ananta Ashayanagudi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Anantashayanagudi, Tal. Hosapeth Dist. Ballari."
-   },
-   {
-      "Place":"Devlapur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Devlapur, Tal. Hosapeth Dist. Ballari."
-   },
-   {
-      "Place":"Aralimatti",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Aralimatti, Tal. Gokak,  Dist. Belgaum"
-   },
-   {
-      "Place":"Badakundri",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Badakundri, Tal. Hukkeri,  Dist. Belgaum."
-   },
-   {
-      "Place":"Badigvad",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Badigvad, Tal. Gokak,  Dist. Belgaum"
-   },
-   {
-      "Place":"Belgaum",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Belgaum, Tal. Dist. Belgaum."
-   },
-   {
-      "Place":"Dandapur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Dandapur, Tal. Gokak,  Dist. Belgaum"
-   },
-   {
-      "Place":"Hulkund",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Hulkund, Tal. Ramdurg,  Dist. Belgaum."
-   },
-   {
-      "Place":"Janghatihal",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Janghatihal, Tal. Hukkeri, Dist. Belgaum."
-   },
-   {
-      "Place":"Kalabhavi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kalabhavi, Tal. Bailhongal,  Dist. Belgaum."
-   },
-   {
-      "Place":"Koligudda",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Koligudda, Tal. Raibag, Dist. Belgaum."
-   },
-   {
-      "Place":"Mallapur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Mallapur Tal. Gokak, Dist. Belgaum."
-   },
-   {
-      "Place":"Sankonatti",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Sankonatti, Tal. Athani, Dist. Belgaum."
-   },
-   {
-      "Place":"Sindikurubett",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Sindikurubett, Tal. Gokak,  Dist. Belgaum"
-   },
-   {
-      "Place":"Tabashi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Tabashi, Tal. Gokak, Dist. Belgaum."
-   },
-   {
-      "Place":"Vadral",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Vadral Tal. Chikkodi, Dist. Belgaum."
-   },
-   {
-      "Place":"Yaragatti",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Yaragatti, Tal. Hukkeri,  Dist. Belgaum."
-   },
-   {
-      "Place":"Yarjeri",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Yarjeri, Tal. Soudatti, Dist. Belgaum."
-   },
-   {
-      "Place":"Yarnal",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Yarnal, Tal. Hukkeri, Dist. Belgaum."
-   },
+   
    {
       "Place":"Bengaluru",
       "Mutt_Address":"SIDDHASHRI DHAAMA #774/6,Ananthpur Village, Near Nagarjuna College, Yelahanka, Bengaluru - 560064\n\n"
    },
    {
-      "Place":"Aishpur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Aicpur, Tal.  Dist. Bidar."
+      "Place":"Kotnur(D)",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kotnur (D), Tal. Dist. Gulbarga."
    },
    {
-      "Place":"Bhalki",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bhalki, Tal. Bhalki, Dist. Bidar."
+      "Place":"Solhapur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Solhapur, Tal. Dist. Solhapur."
    },
    {
-      "Place":"Bhavani  Bijjargaon",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bhavani Bijjargaon Tal. Aurad, Dist. Bidar."
+      "Place":"Khajakotnur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Khajakotnur, Tal. Dist. Gulbarga."
    },
-   {
-      "Place":"Biri(K)",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Biri (K), Tal. Bhalki, Dist. Bidar."
-   },
-   {
-      "Place":"Chanbol",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Chanbol, Tal.  Dist. Bidar."
-   },
-   {
-      "Place":"Chitguppa",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Chitguppa, Tal.Humanabad, Dist. Bidar."
-   },
-   {
-      "Place":"Halalli",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Halalli, Tal. Bhalki, Dist. Bidar."
-   },
-   {
-      "Place":"Janti",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Janti, Tal. Bhalki, Dist. Bidar."
-   },
-   {
-      "Place":"Kurub Kelgi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kurub Kelgi, Tal. Bhalki, Dist. Bidar."
-   },
-   {
-      "Place":"Manthal",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Manthal, Tal. Basav kalyan, Dist. Bidar. Ph: 9901867562"
-   },
-   {
-      "Place":"Muchalamba",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Muchalamba, Tal. Basav kalyan, Dist. Bidar."
-   },
-   {
-      "Place":"Mustapur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Mustapur, Tal.Humanabad, Dist. Bidar."
-   },
-   {
-      "Place":"Nagur(K)",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Nagur (K), Tal. Bhalki, Dist. Bidar."
-   },
-   {
-      "Place":"Naubad",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Naubad, Tal.  Dist. Bidar."
-   },
-   {
-      "Place":"Ramteerth",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Ramteerth, Tal. Basav kalyan, Dist. Bidar."
-   },
-   {
-      "Place":"Santapur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Santapur, Tal. Aurad, Dist. Bidar."
-   },
-   {
-      "Place":"Sastapur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Sastapur, Tal. Basav kalyan, Dist. Bidar."
-   },
-   {
-      "Place":"Yakamba",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Akamba, Tal. Aurad, Dist. Bidar."
-   },
-   {
-      "Place":"Yanagunda",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Yanagunda, Tal. Aurad, Dist. Bidar."
-   },
-   {
-      "Place":"Aski",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Aski, Tal. Sindagi, Dist. Bijapur."
-   },
-   {
-      "Place":"Basavanbagevadi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Basavanbagevadi, Dist. Bijapur."
-   },
-   {
-      "Place":"Bijapur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bijapur, Tal. Dist. Bijapur."
-   },
-   {
-      "Place":"Bijjaragi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bijjaragi, Tal. Dist. Bijapur."
-   },
-   {
-      "Place":"Bisnal",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bisnal, Tal. Basavanbagevadi Dist. Bijapur."
-   },
-   {
-      "Place":"Byakud",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Byakud,  Tal. Sindagi, Dist. Bijapur."
-   },
-   {
-      "Place":"Devarnavadagi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Devarnavadagi, Tal. Sindagi, Dist. Bijapur."
-   },
-   {
-      "Place":"Donur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Donur, Tal. Basavanbagevadi Dist. Bijapur."
-   },
-   {
-      "Place":"Golasar",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Golasar, Tal. Indi, Dist. Bijapur."
-   },
-   {
-      "Place":"Gonasangi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Gonasangi, Tal. Dist. Bijapur."
-   },
-   {
-      "Place":"Honnutigi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Honnutigi, Tal. Dist. Bijapur."
-   },
-   {
-      "Place":"Indi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Indi, Tal. Indi, Dist. Bijapur."
-   },
-   {
-      "Place":"Jumnal",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Jumnal, Tal. Dist. Bijapur."
-   },
-   {
-      "Place":"Kakkalameli",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kakkalameli, Tal. Sindagi, Dist. Bijapur."
-   },
-   {
-      "Place":"Kalakeri",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kalakeri, Tal. Sindagi, Dist. Bijapur."
-   },
-   {
-      "Place":"Mirgi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Mirgi, Tal. Indi, Dist. Bijapur."
-   },
-   {
-      "Place":"Muddebihal",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Muddebihal, Tal. Muddebihal Dist. Bijapur."
-   },
-   {
-      "Place":"Rodagi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Rodagi, Tal. Muddebihal Dist. Bijapur."
-   },
-   {
-      "Place":"Shivanagi",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Shivanagi, Tal. Dist. Bijapur."
-   },
-   {
-      "Place":"Shivapur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Shivapur, Tal. Indi, Dist. Bijapur."
-   },
-   {
-      "Place":"Amargol",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Amargol, Tal. Hubli Dist. Dharvad."
-   },
-   {
-      "Place":"Jagalur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Jagalur, Tal. Ron, Dist. Gadag."
-   },
-   {
-      "Place":"Nargund",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Nargund, Tal. Nargund, Dist. Gadag."
-   },
+   
    {
       "Place":"Somalapur",
       "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Somalapur, Tal. Dist. Gadag."
@@ -380,17 +122,10 @@ export class MuttsAshramaPage {
       "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Karajagi, Tal. Afjhalpur, Dist. Gulbarga."
    },
    {
-      "Place":"Khajakotnur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Khajakotnur, Tal. Dist. Gulbarga."
-   },
-   {
       "Place":"Kolkunda",
       "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kolkunda, Tal. Sedum, Dist. Gulbarga."
    },
-   {
-      "Place":"Kotnur(D)",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kotnur (D), Tal. Dist. Gulbarga."
-   },
+   
    {
       "Place":"Kottargi",
       "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kottargi, Tal. Aland, Dist. Gulbarga."
@@ -591,10 +326,7 @@ export class MuttsAshramaPage {
       "Place":"Shaval",
       "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Shaval, Tal. Akkalkot, Dist. Solhapur."
    },
-   {
-      "Place":"Solhapur",
-      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Solhapur, Tal. Dist. Solhapur."
-   },
+   
    {
       "Place":"Basav Nagar",
       "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Basav Nagar, Tal. Dist. South Solhapur."
@@ -658,6 +390,278 @@ export class MuttsAshramaPage {
    {
       "Place":"Zuvari Nagar Zhari Goa",
       "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Zuvari Nagar Zhari, Tal.Dist. Vasco, Goa."
+   },{
+      "Place":"Akkimardi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Akkimardi, Tal. Mudhol Dist. Bagalkot."
+   },
+   {
+      "Place":"Banahatti",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Banahatti, Tal. Jamakhandi Dist. Bagalkot."
+   },
+   {
+      "Place":"Hunasikatti",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Hunasikatti, Tal. Jamakhandi Dist. Bagalkot."
+   },
+   {
+      "Place":"Jamakhandi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Jamakhandi, Tal. Jamakhandi Dist. Bagalkot."
+   },
+   {
+      "Place":"Nagaral",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Nagaral, Tal. Mudhol Dist. Bagalkot."
+   },
+   {
+      "Place":"Sharadal",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Sharadal, Tal. Dist. Bagalkot."
+   },
+   {
+      "Place":"Tulsigeri",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Tulsigeri, Tal. Dist. Bagalkot."
+   },
+   {
+      "Place":"Ananta Ashayanagudi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Anantashayanagudi, Tal. Hosapeth Dist. Ballari."
+   },
+   {
+      "Place":"Devlapur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Devlapur, Tal. Hosapeth Dist. Ballari."
+   },
+   {
+      "Place":"Aralimatti",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Aralimatti, Tal. Gokak,  Dist. Belgaum"
+   },
+   {
+      "Place":"Badakundri",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Badakundri, Tal. Hukkeri,  Dist. Belgaum."
+   },
+   {
+      "Place":"Badigvad",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Badigvad, Tal. Gokak,  Dist. Belgaum"
+   },
+   {
+      "Place":"Belgaum",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Belgaum, Tal. Dist. Belgaum."
+   },
+   {
+      "Place":"Dandapur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Dandapur, Tal. Gokak,  Dist. Belgaum"
+   },
+   {
+      "Place":"Hulkund",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Hulkund, Tal. Ramdurg,  Dist. Belgaum."
+   },
+   {
+      "Place":"Janghatihal",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Janghatihal, Tal. Hukkeri, Dist. Belgaum."
+   },
+   {
+      "Place":"Kalabhavi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kalabhavi, Tal. Bailhongal,  Dist. Belgaum."
+   },
+   {
+      "Place":"Koligudda",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Koligudda, Tal. Raibag, Dist. Belgaum."
+   },
+   {
+      "Place":"Mallapur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Mallapur Tal. Gokak, Dist. Belgaum."
+   },
+   {
+      "Place":"Sankonatti",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Sankonatti, Tal. Athani, Dist. Belgaum."
+   },
+   {
+      "Place":"Sindikurubett",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Sindikurubett, Tal. Gokak,  Dist. Belgaum"
+   },
+   {
+      "Place":"Tabashi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Tabashi, Tal. Gokak, Dist. Belgaum."
+   },
+   {
+      "Place":"Vadral",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Vadral Tal. Chikkodi, Dist. Belgaum."
+   },
+   {
+      "Place":"Yaragatti",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Yaragatti, Tal. Hukkeri,  Dist. Belgaum."
+   },
+   {
+      "Place":"Yarjeri",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Yarjeri, Tal. Soudatti, Dist. Belgaum."
+   },
+   {
+      "Place":"Yarnal",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Yarnal, Tal. Hukkeri, Dist. Belgaum."
+   },
+   
+   {
+      "Place":"Aishpur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Aicpur, Tal.  Dist. Bidar."
+   },
+   {
+      "Place":"Bhalki",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bhalki, Tal. Bhalki, Dist. Bidar."
+   },
+   {
+      "Place":"Bhavani  Bijjargaon",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bhavani Bijjargaon Tal. Aurad, Dist. Bidar."
+   },
+   {
+      "Place":"Biri(K)",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Biri (K), Tal. Bhalki, Dist. Bidar."
+   },
+   {
+      "Place":"Chanbol",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Chanbol, Tal.  Dist. Bidar."
+   },
+   {
+      "Place":"Chitguppa",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Chitguppa, Tal.Humanabad, Dist. Bidar."
+   },
+   {
+      "Place":"Halalli",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Halalli, Tal. Bhalki, Dist. Bidar."
+   },
+   {
+      "Place":"Janti",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Janti, Tal. Bhalki, Dist. Bidar."
+   },
+   {
+      "Place":"Kurub Kelgi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kurub Kelgi, Tal. Bhalki, Dist. Bidar."
+   },
+   {
+      "Place":"Manthal",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Manthal, Tal. Basav kalyan, Dist. Bidar. Ph: 9901867562"
+   },
+   {
+      "Place":"Muchalamba",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Muchalamba, Tal. Basav kalyan, Dist. Bidar."
+   },
+   {
+      "Place":"Mustapur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Mustapur, Tal.Humanabad, Dist. Bidar."
+   },
+   {
+      "Place":"Nagur(K)",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Nagur (K), Tal. Bhalki, Dist. Bidar."
+   },
+   {
+      "Place":"Naubad",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Naubad, Tal.  Dist. Bidar."
+   },
+   {
+      "Place":"Ramteerth",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Ramteerth, Tal. Basav kalyan, Dist. Bidar."
+   },
+   {
+      "Place":"Santapur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Santapur, Tal. Aurad, Dist. Bidar."
+   },
+   {
+      "Place":"Sastapur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Sastapur, Tal. Basav kalyan, Dist. Bidar."
+   },
+   {
+      "Place":"Yakamba",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Akamba, Tal. Aurad, Dist. Bidar."
+   },
+   {
+      "Place":"Yanagunda",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Yanagunda, Tal. Aurad, Dist. Bidar."
+   },
+   {
+      "Place":"Aski",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Aski, Tal. Sindagi, Dist. Bijapur."
+   },
+   {
+      "Place":"Basavanbagevadi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Basavanbagevadi, Dist. Bijapur."
+   },
+   {
+      "Place":"Bijapur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bijapur, Tal. Dist. Bijapur."
+   },
+   {
+      "Place":"Bijjaragi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bijjaragi, Tal. Dist. Bijapur."
+   },
+   {
+      "Place":"Bisnal",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Bisnal, Tal. Basavanbagevadi Dist. Bijapur."
+   },
+   {
+      "Place":"Byakud",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Byakud,  Tal. Sindagi, Dist. Bijapur."
+   },
+   {
+      "Place":"Devarnavadagi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Devarnavadagi, Tal. Sindagi, Dist. Bijapur."
+   },
+   {
+      "Place":"Donur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Donur, Tal. Basavanbagevadi Dist. Bijapur."
+   },
+   {
+      "Place":"Golasar",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Golasar, Tal. Indi, Dist. Bijapur."
+   },
+   {
+      "Place":"Gonasangi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Gonasangi, Tal. Dist. Bijapur."
+   },
+   {
+      "Place":"Honnutigi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Honnutigi, Tal. Dist. Bijapur."
+   },
+   {
+      "Place":"Indi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Indi, Tal. Indi, Dist. Bijapur."
+   },
+   {
+      "Place":"Jumnal",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Jumnal, Tal. Dist. Bijapur."
+   },
+   {
+      "Place":"Kakkalameli",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kakkalameli, Tal. Sindagi, Dist. Bijapur."
+   },
+   {
+      "Place":"Kalakeri",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Kalakeri, Tal. Sindagi, Dist. Bijapur."
+   },
+   {
+      "Place":"Mirgi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Mirgi, Tal. Indi, Dist. Bijapur."
+   },
+   {
+      "Place":"Muddebihal",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Muddebihal, Tal. Muddebihal Dist. Bijapur."
+   },
+   {
+      "Place":"Rodagi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Rodagi, Tal. Muddebihal Dist. Bijapur."
+   },
+   {
+      "Place":"Shivanagi",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Shivanagi, Tal. Dist. Bijapur."
+   },
+   {
+      "Place":"Shivapur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Shivapur, Tal. Indi, Dist. Bijapur."
+   },
+   {
+      "Place":"Amargol",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Amargol, Tal. Hubli Dist. Dharvad."
+   },
+   {
+      "Place":"Jagalur",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Jagalur, Tal. Ron, Dist. Gadag."
+   },
+   {
+      "Place":"Nargund",
+      "Mutt_Address":"Shri Sadguru Yallalingeshwar Punyashram At. Po. Nargund, Tal. Nargund, Dist. Gadag."
    }];
   
 

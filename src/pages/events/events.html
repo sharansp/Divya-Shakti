@@ -9,21 +9,29 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="page1" style="background-color:#f5ecec;">
+   <!--  <ion-label>Kannada</ion-label>
+    <ion-toggle value="Eng" id="idBtnToggle" (ionChange)="changeEventL10n(value)" checked="true" color="energized"></ion-toggle> -->
 
- <ion-grid>
-  
-
-  <ion-row justify-content-center>
-    <ion-col col-50 style="font-weight: bolder;font-size: large;">
-      Date
+<!-- <button ion-button round>Round Button</button> -->
+<ion-grid>
+  <ion-row justify-content-center >
+   
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+     <button ion-button round id="idButtonToggle" style="background-color:#f5ecec;color: red;" on-click="showEventToggle(param)">
+      Change View
+    </button>
     </ion-col>
-    <ion-col col-50 style="font-weight: bolder;font-size: large;">
-      Description
-    </ion-col>
-    <ion-col col-50 style="font-weight: bolder;font-size: large;">
-      Place
+    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
+      <button ion-button round id="idBtnToggle" style="background-color:#f5ecec;color: blue;" on-click="changeEventL10n(param)">
+      Kannada
+    </button>
     </ion-col>
   </ion-row>
+  </ion-grid>
+
+
+
+ <ion-grid id="idTable" hidden="false">
 
   <ion-searchbar
     [(ngModel)]="myInput"
@@ -31,14 +39,30 @@
     (ionInput)="getItems($event)"
     (ionCancel)="onCancel($event)"
     placeholder="Search mutts here">
-  </ion-searchbar>
+  </ion-searchbar>  
 
-  <ion-row justify-content-center *ngFor="let hero of data">
-    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
-     {{hero.Date_Month}} {{hero.Date_Day}}
+  <ion-row justify-content-center>
+    <ion-col col-50 style="font-weight: bolder;text-align:left;font-size: large;">
+      Date
+    </ion-col>
+    <ion-col col-50 style="font-weight: bolder;text-align:center;font-size: large;">
+      Description
+    </ion-col>
+    <ion-col col-50 style="font-weight: bolder;text-align:center;font-size: large;">
+      Place
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row justify-content-center id="idTableRow"  *ngFor="let hero of data">
+    <ion-col col-50 style="font-size: large;color: black;text-align:left;">
+     {{hero.Date}}
     </ion-col>
     <ion-col col-50 style="font-size: large;color: black;text-align:center;">
       {{hero.Description}}
+      {{hero.SubDesc}}
+      {{hero.Time}}
     </ion-col>
     <ion-col col-50 style="font-size: large;color: black;text-align:center;">
       {{hero.Place}}
@@ -47,7 +71,34 @@
 
  
 </ion-grid>
+
+  <ion-grid id="idListView">
+   
+
+  <ion-list id="idListViewList" *ngFor="let hero of data">
+    <ion-item class="icon-item-bg" style="background-color:#f5ecec;" color="positive" on-click="goToEventsDetail(hero)" >
+      <!-- <ion-thumbnail item-left>
+        <img src="assets/img/SiddalingaAppaji.jpg" />
+      </ion-thumbnail> -->
+
+      <h1  style="color:#ff7500;font-size: 25px;"> 
+        {{hero.Date}} 
+      </h1>
+      
+      <p >{{hero.Description}} </p>
+      <p >{{hero.SubDesc}} </p>
+      <p >{{hero.Time}} </p>
+      
+      <h6     style="font-size: larger;"> 
+        {{hero.Place}} 
+      </h6>
+    </ion-item>
+    <hr>
+  </ion-list>
+
+  </ion-grid>
   <!-- <button id="events-button1" ion-button color="royal" block style="color:#FFFFFF;border-radius:24px 24px 24px 24px;" href-inappbrowser="http://bp9news.com/mmt-run-to-basava-purana-on-the-siddharameshwar-sankalpa-yatra1122/">
     ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪ ಯಾತ್ರೆ
   </button> -->
+
 </ion-content>
