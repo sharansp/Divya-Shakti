@@ -48,7 +48,7 @@ export class MyApp {
          // console.log(Object.keys(this.navCtrl.getActive().instance));
          // console.log(Object.keys(this.navCtrl.getActive().));
         
-
+         var that = this;
           let alert = 
 
           this.alertCtrl.create({
@@ -63,23 +63,22 @@ export class MyApp {
                   platform.exitApp();
                 }
               },
-              'Dismiss'
-              /*{
+             // 'Dismiss',
+              {
                 text: 'Cancel',
                 role: 'cancel',
-                cssClass:'boldAlert',
-                 // text : '<b>Save</b>',
+                //cssClass:'boldAlert',
                 // name: 'button-positive',
                 handler: () => {
                   console.log('Cancel clicked');
-                  this.showedAlert = true;
+                  that.showedAlert = true;
                   // let _homePage = this.navCtrl.getActive().component.name.toString().toLowerCase();
                   // if(_homePage.includes('homepage')){
                   //      return;
                   // }
                   // this.navCtrl.setRoot(HomePage);
                 }
-              }*/
+              }
               
             ]
           });
@@ -88,13 +87,13 @@ export class MyApp {
         //   this.showedAlert = false;
         // }
        // }
-       var that = this;
-         alert.onDidDismiss(function(evt){
+
+         /*alert.onDidDismiss(function(evt){
 
            console.log(that.showedAlert);
            // console.log(that);
            that.showedAlert = true;
-         });
+         });*/
 
           let view = this.navCtrl.getActive(); 
           if ( view.instance instanceof HomePage ){
@@ -104,7 +103,8 @@ export class MyApp {
               alert.present();
               this.showedAlert = false;
             }else{
-             // alert.dismiss();
+              alert.dismiss();
+              //this.showedAlert = true;
             }
             
           }
