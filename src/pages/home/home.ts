@@ -5,6 +5,7 @@ import { SankalpaYatrePage } from '../sankalpa-yatre/sankalpa-yatre';
 import { JagadgurusPage } from '../jagadgurus/jagadgurus';
 import { GalleryPage } from '../gallery/gallery';
 
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
