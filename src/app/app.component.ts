@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, Nav } from 'ionic-angular';
+import { Platform, Nav, AlertController  } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { JagadgurusPage } from '../pages/jagadgurus/jagadgurus';
@@ -28,12 +28,115 @@ export class MyApp {
 
 
 
-  constructor( platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+
+  constructor( private alertCtrl: AlertController, platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
+      this.showedAlert = true;
+
+     platform.registerBackButtonAction(() => {
+
+         //console.log(this.navCtrl);
+         //console.log(this.navCtrl.id);
+         //console.log(this.navCtrl._ids);
+         //console.log(this.navCtrl.getActive().component.name);
+         //console.log(this.navCtrl.getActive());
+         //console.log(this.navCtrl.getActive().instance);
+         // console.log(Object.keys(this.navCtrl.getActive().instance));
+         // console.log(Object.keys(this.navCtrl.getActive().));
+        
+
+          let alert = 
+
+          this.alertCtrl.create({
+            title: 'Alert',
+            message: 'Are you sure you want to exit?',
+            enableBackdropDismiss:false,
+            buttons: [
+            {
+                text: 'Ok',
+                handler: () => {
+                  console.log('Ok clicked');
+                  platform.exitApp();
+                }
+              },
+              'Dismiss'
+              /*{
+                text: 'Cancel',
+                role: 'cancel',
+                cssClass:'boldAlert',
+                 // text : '<b>Save</b>',
+                // name: 'button-positive',
+                handler: () => {
+                  console.log('Cancel clicked');
+                  this.showedAlert = true;
+                  // let _homePage = this.navCtrl.getActive().component.name.toString().toLowerCase();
+                  // if(_homePage.includes('homepage')){
+                  //      return;
+                  // }
+                  // this.navCtrl.setRoot(HomePage);
+                }
+              }*/
+              
+            ]
+          });
+        //}
+        // else{
+        //   this.showedAlert = false;
+        // }
+       // }
+       var that = this;
+         alert.onDidDismiss(function(evt){
+
+           console.log(that.showedAlert);
+           // console.log(that);
+           that.showedAlert = true;
+         });
+
+          let view = this.navCtrl.getActive(); 
+          if ( view.instance instanceof HomePage ){
+            
+            console.log(this.showedAlert);
+            if (this.showedAlert) {
+              alert.present();
+              this.showedAlert = false;
+            }else{
+             // alert.dismiss();
+            }
+            
+          }
+          else if(view.instance instanceof EventsPage){
+            this.navCtrl.setRoot(HomePage);
+          }else if(view.instance instanceof MuttsAshramaPage){
+            this.navCtrl.setRoot(HomePage);
+          }else if(view.instance instanceof AbhishekSevaPage){
+            this.navCtrl.setRoot(HomePage);
+          }else if(view.instance instanceof ContactsPage){
+            this.navCtrl.setRoot(HomePage);
+          }else if(view.instance instanceof GalleryPage){
+            this.navCtrl.setRoot(HomePage);
+          }else if(view.instance instanceof JagadgurusPage){
+            this.navCtrl.setRoot(HomePage);
+          }else if(view.instance instanceof SankalpaYatrePage){
+            this.navCtrl.setRoot(HomePage);
+          }else if(view.instance instanceof SriMurugharajendraAppajiPage){
+            this.navCtrl.setRoot(JagadgurusPage);
+          }else if(view.instance instanceof SriSiddarameshwaraAppajiPage){
+            this.navCtrl.setRoot(JagadgurusPage);
+          }else if(view.instance instanceof SriYallalingAppajiPage){
+            this.navCtrl.setRoot(JagadgurusPage);
+          }else if(view.instance instanceof SriSiddalingaAppajiPage){
+            this.navCtrl.setRoot(JagadgurusPage);
+          }else if(view.instance instanceof AboutGuruPage){
+            this.navCtrl.setRoot(JagadgurusPage);
+          }
+          
+        })
+      
+
       /*this.showedAlert = false;
                       // Confirm exit
         platform.registerBackButtonAction(() => {
