@@ -7,13 +7,13 @@ import { AboutGuruPage } from '../about-guru/about-guru';
   templateUrl: 'blogsdata.html'
 })
 export class BlogsDataPage {
-  public firstParam;
-  public secondParam;
+  public data;
+  // public secondParam;
 	//blogsdata;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-	  	 this.firstParam = navParams.get("firstPassed");
-    this.secondParam = navParams.get("secondPassed");
+	  	 this.data = navParams.get("data");
+    // this.secondParam = navParams.get("secondPassed");
 	}
 
 	/*goToBlogDetail(bdata){

@@ -4,24 +4,21 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Blogs / Articles
+      Article
     </ion-title>
   </ion-navbar>
 </ion-header>
 <ion-content padding id="pageBlog" style="background-color:#FFF5EE;">
-  <ion-list id="blogs-list2" >
-   
-    
-    <ion-item class="icon-item-bg" style="background-color:#FFF5EE;" color="positive" on-click="goToBlogDetail(blogsdata)" id="blogs-list-item10">
-      <ion-thumbnail item-left>
-        <img class="image-border"  src="{{secondParam}}" />
-      </ion-thumbnail>
-      <h2 text-wrap class="jagadguruHeader"> 
-         {{firstParam}}
-      </h2>
-      <!-- <p class="pwrap"> {{bdata.BlogContent}}</p> -->
-    </ion-item>
+   <img src="{{data.BlogImage}}">
 
-   
-  </ion-list>
+   <div>
+        
+
+
+<h1  style="text-align: center;">{{data.BlogTitle}}</h1>
+<h6 style="text-align: justify;">
+{{data.BlogContent}}
+</h6>
+  </div>
+
 </ion-content>

@@ -12,14 +12,14 @@
   <ion-list id="blogs-list2" *ngFor="let bdata of blogsdata">
    
     
-    <ion-item class="icon-item-bg" style="background-color:#FFF5EE;" color="positive" on-click="goToBlogDetail(blogsdata)" id="blogs-list-item10">
+    <ion-item class="icon-item-bg" style="background-color:#FFF5EE;" color="positive" on-click="goToBlogDetail(bdata)" id="blogs-list-item10">
       <ion-thumbnail item-left>
         <img class="image-border"  src="{{bdata.BlogIcon}}" />
       </ion-thumbnail>
       <h2 text-wrap class="jagadguruHeader"> 
          {{bdata.BlogTitle}}
       </h2>
-      <!-- <p class="pwrap"> {{bdata.BlogContent}}</p> -->
+      
     </ion-item>
 
    
