@@ -18,7 +18,7 @@ import { AboutGuruPage } from '../pages/about-guru/about-guru';
 import { SriSiddarameshwaraAppajiPage } from '../pages/sri-siddarameshwara-appaji/sri-siddarameshwara-appaji';
 import { SriMurugharajendraAppajiPage } from '../pages/sri-murugharajendra-appaji/sri-murugharajendra-appaji';
 import { SankalpaYatrePage } from '../pages/sankalpa-yatre/sankalpa-yatre';
-
+import { SocialSharing } from '@ionic-native/social-sharing';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -42,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SocialSharing
   ],
   bootstrap: [IonicApp],
   entryComponents: [

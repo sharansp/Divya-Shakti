@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SocialSharing } from '@ionic-native/social-sharing';
+
 
 @Component({
   selector: 'page-contacts',
@@ -7,7 +9,22 @@ import { NavController } from 'ionic-angular';
 })
 export class ContactsPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private socialSharing: SocialSharing) {
+      // Check if sharing via com.whatsapp is supported
+      this.socialSharing.canShareVia("com.whatsapp", "message", "subject").then(() => {
+        // Sharing via com.whatsapp is possible
+        // Share via email
+          this.socialSharing.shareViaWhatsApp("message", "image", "url").then(() => {
+            // Success!
+          }).catch(() => {
+            // Error!
+          });
+
+      }).catch(() => {
+        // Sharing via com.whatsapp is not possible
+      });
+
+    //shareViaWhatsApp(message, image, url)
   }
 
   followUsClickFB  (arg) {
