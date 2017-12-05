@@ -123,6 +123,8 @@ export class MyApp {
             this.navCtrl.setRoot(HomePage);
           }else if(view.instance instanceof SankalpaYatrePage){
             this.navCtrl.setRoot(HomePage);
+          }else if(view.instance instanceof BlogsPage){
+            this.navCtrl.setRoot(HomePage);
           }else if(view.instance instanceof SriMurugharajendraAppajiPage){
             this.navCtrl.setRoot(JagadgurusPage);
           }else if(view.instance instanceof SriSiddarameshwaraAppajiPage){

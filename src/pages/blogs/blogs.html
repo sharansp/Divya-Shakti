@@ -9,5 +9,19 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="pageBlog" style="background-color:#DFCDEE;">
-  
+  <ion-list id="blogs-list2" *ngFor="let bdata of blogsdata">
+   
+    
+    <ion-item class="icon-item-bg" color="positive" on-click="goToBlogDetail(blogsdata)" id="blogs-list-item10">
+      <ion-thumbnail item-left>
+        <img src="{{bdata.BlogIcon}}" />
+      </ion-thumbnail>
+      <h2 class="jagadguruHeader"> 
+         {{bdata.BlogTitle}}
+      </h2>
+      <p class="pwrap"> {{bdata.BlogContent}}</p>
+    </ion-item>
+
+   
+  </ion-list>
 </ion-content>
