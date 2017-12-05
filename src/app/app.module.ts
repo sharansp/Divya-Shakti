@@ -7,6 +7,7 @@ import { JagadgurusPage } from '../pages/jagadgurus/jagadgurus';
 //import { BlogsPage } from '../pages/blogs/blogs';
 import { HomePage } from '../pages/home/home';
 import { BlogsPage } from '../pages/blogs/blogs';
+import { BlogsDataPage } from '../pages/blogsdata/blogsdata';
 import { MuttsAshramaPage } from '../pages/mutts-ashrama/mutts-ashrama';
 //import { Blogs2Page } from '../pages/blogs2/blogs2';
 import { GalleryPage } from '../pages/gallery/gallery';
@@ -40,7 +41,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SriSiddarameshwaraAppajiPage,
     SriMurugharajendraAppajiPage,
     SankalpaYatrePage,
-    BlogsPage
+    BlogsPage,
+    BlogsDataPage
   ],
   imports: [
     BrowserModule,
@@ -63,7 +65,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SriSiddarameshwaraAppajiPage,
     SriMurugharajendraAppajiPage,
     SankalpaYatrePage,
-    BlogsPage
+    BlogsPage,
+    BlogsDataPage
   ],
   providers: [
     StatusBar,

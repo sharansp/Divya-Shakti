@@ -15,6 +15,7 @@ import { ContactsPage } from '../pages/contacts/contacts';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { HomePage } from '../pages/home/home';
 import { BlogsPage } from '../pages/blogs/blogs';
+import { BlogsDataPage } from '../pages/blogsdata/blogsdata';
 import { SankalpaYatrePage } from '../pages/sankalpa-yatre/sankalpa-yatre';
 
 
@@ -135,6 +136,8 @@ export class MyApp {
             this.navCtrl.setRoot(JagadgurusPage);
           }else if(view.instance instanceof AboutGuruPage){
             this.navCtrl.setRoot(JagadgurusPage);
+          }else if(view.instance instanceof BlogsDataPage){
+            this.navCtrl.setRoot(BlogsPage);
           }
           
         })

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AboutGuruPage } from '../about-guru/about-guru';
+import { BlogsDataPage } from '../blogsdata/blogsdata';
+// import { BlogsDataPage } from '../pages/blogsdata/blogsdata';
 
 @Component({
   selector: 'page-blogs',
@@ -28,7 +29,7 @@ export class BlogsPage {
 
 	goToBlogDetail(bdata){
     if (!bdata) bdata = {};
-    this.navCtrl.push(AboutGuruPage,{
+    this.navCtrl.push(BlogsDataPage,{
       firstPassed: "value 1",
       secondPassed: "value 2"
     });
