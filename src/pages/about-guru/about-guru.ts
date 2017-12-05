@@ -6,6 +6,8 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'about-guru.html'
 })
 export class AboutGuruPage {
+public firstParam;
+  public secondParam;
 
   constructor(public navCtrl: NavController) {
   }

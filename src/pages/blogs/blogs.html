@@ -8,18 +8,18 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding id="pageBlog" style="background-color:#DFCDEE;">
+<ion-content padding id="pageBlog" style="background-color:#FFF5EE;">
   <ion-list id="blogs-list2" *ngFor="let bdata of blogsdata">
    
     
-    <ion-item class="icon-item-bg" color="positive" on-click="goToBlogDetail(blogsdata)" id="blogs-list-item10">
+    <ion-item class="icon-item-bg" style="background-color:#FFF5EE;" color="positive" on-click="goToBlogDetail(blogsdata)" id="blogs-list-item10">
       <ion-thumbnail item-left>
-        <img style="border-radius: 2rem;" src="{{bdata.BlogIcon}}" />
+        <img class="image-border"  src="{{bdata.BlogIcon}}" />
       </ion-thumbnail>
-      <h2 class="jagadguruHeader"> 
+      <h2 text-wrap class="jagadguruHeader"> 
          {{bdata.BlogTitle}}
       </h2>
-      <p class="pwrap"> {{bdata.BlogContent}}</p>
+      <!-- <p class="pwrap"> {{bdata.BlogContent}}</p> -->
     </ion-item>
 
    
