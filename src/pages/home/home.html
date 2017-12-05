@@ -18,33 +18,33 @@
          ಜರುಗಲಿದೆ.      * ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠ : ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪದಂತೆ ಅನುಭವ ಮಂಟಪವು 2018ರ ಜನೆವರಿ 12, 13,14 ರಂದು ಜರುಗಲಿದೆ
       </h4>
       <div class="spacer" style="height:10px;" ></div>
-      <ion-slides effect="fade" centeredSlides zoom="true" speed="1000" autoplay="8000" pager loop paginationType="bullets" style="width:100%;height: 100%;">
-         <ion-slide *ngFor="let slide of slides">
-            <img [src]="slide" style="display:block;width:100%;height:auto;" >
+      <ion-slides effect="fade" centeredSlides zoom="true" speed="1000" autoplay="8000" pager loop paginationType="bullets">
+         <ion-slide *ngFor="let slide of slides" class="swipe-slider-new">
+            <img [src]="slide" style="display:block;width:100%;height:250px;" >
          </ion-slide>
       </ion-slides>
    </div>
    <div class="spacer" style="height:5px;" id="gallery-spacer1"></div>
-   <!-- <ion-img width="75" height="75" (click)="goToEvents()" src="assets/img/fair-stand.png"></ion-img>
-      <ion-img width="75" height="75" on-click="goToJagadgurus()" src="assets/img/events.jpg"></ion-img>
+   <!-- <ion-img class="icon-image" width="75" height="75" (click)="goToEvents()" src="assets/img/fair-stand.png"></ion-img>
+      <ion-img class="icon-image" width="75" height="75" on-click="goToJagadgurus()" src="assets/img/events.jpg"></ion-img>
       
-      <ion-img width="75" height="75" (click)="goToEvents()" src="assets/img/Gallery.png"></ion-img> -->
+      <ion-img class="icon-image" width="75" height="75" (click)="goToEvents()" src="assets/img/Gallery.png"></ion-img> -->
    <!-- <div class="col col-25"  >
-      <ion-img width="75" height="75" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
+      <ion-img class="icon-image" width="75" height="75" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
         
       </ion-img>
       </div>
       
       <div class="col col-25"  >
-      <ion-img width="75" height="75" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
+      <ion-img class="icon-image" width="75" height="75" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
       </div>
       
       <div class="col col-25"  >
-      <ion-img width="75" height="75" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
+      <ion-img class="icon-image" width="75" height="75" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
       </div>
       
       <div class="col col-25"  >
-      <ion-img width="75" height="75" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png">
+      <ion-img class="icon-image" width="75" height="75" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png">
       </ion-img>
       </div>
       
@@ -53,48 +53,57 @@
       <!-- <ion-grid> -->
       <!-- <ion-row justify-content-center >
          <ion-col col-50 style="font-size: large;color: black;text-align:center;">
-           <ion-img class="circle-pic" width="75" height="75" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png">
+           <ion-img class="icon-image" class="circle-pic" width="75" height="75" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png">
            </ion-img>
          </ion-col>
          
          <ion-col col-50 style="font-size: large;color: black;text-align:center;">
-           <ion-img width="75" height="75" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
+           <ion-img class="icon-image" width="75" height="75" on-click="goToEvents()" src="assets/img/events-icon.png"></ion-img>
          </ion-col>
          </ion-row>
          
          <ion-row justify-content-center >
          <ion-col col-50 style="font-size: large;color: black;text-align:center;">
-           <ion-img width="75" height="75" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
+           <ion-img class="icon-image" width="75" height="75" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
          </ion-col>
          
          <ion-col col-50 style="font-size: large;color: black;text-align:center;">
-            <ion-img width="75" height="75" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
+            <ion-img class="icon-image" width="75" height="75" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
             </ion-img>
          </ion-col>
          </ion-row> -->
-      <ion-slides effect="slide" zoom="true" autoplay="null" pager  paginationType="bullets" style="border-radius: 30%;">
+      <ion-slides effect="slide" zoom="true" autoplay="null" pager  paginationType="bullets" >
          <ion-slide >    
 
-            <ion-img width="75" height="75" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png" style="border-radius: 30%;">
+            
+
+         <!--  <button class="icon-image" > -->
+      <ion-img  class="img_border_r" width="75" height="75" on-click="goToSankalpaYatre()" src="assets/img/sanklpa-yatre-icon.png" >
             </ion-img>
+   <!--  </button> -->
          <!-- </ion-slide>
          <ion-slide > -->
-            <ion-img width="75" height="75" on-click="goToEvents()" src="assets/img/events-icon.png" style="border-radius: 30%;"></ion-img>
+            <ion-img class="img_border_r" width="75" height="75" on-click="goToEvents()" src="assets/img/events-icon.png" style="border-radius: 30%;"></ion-img>
          <!-- </ion-slide>
          <ion-slide > -->
-            <ion-img width="75" style="border-radius: 30%;" height="75" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
+            <ion-img class="img_border_r" width="75" style="border-radius: 30%;" height="75" on-click="goToJagadgurus()" src="assets/img/about-mutt-icon.png">
             </ion-img>
         <!--  </ion-slide>
          <ion-slide > -->
             
-            <ion-img width="75" style="border-radius: 30%;" height="75" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
+            <ion-img class="img_border_r" width="75" style="border-radius: 30%;" height="75" on-click="goToGallery()" src="assets/img/galley-icon.png"></ion-img>
          </ion-slide>
       </ion-slides>
       <!-- </ion-grid> -->
    </div>
    <hr>
    <div>
-      
+    <div   id="gallery-spacer0" style="    font-size: 2rem;
+font-weight: bolder;background-color: #BB7F5A;
+      font-size: medium;
+      font-family: cursive;text-align: -webkit-center;">
+      ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪ ಯಾತ್ರೆ
+   </div>  
      <h6> ಶ್ರೀ ಸಿದ್ದರಾಮೇಶ್ವರ ಸಂಕಲ್ಪ ಜಾತ್ರೆಗೆ ಭರ್ಜರಿ ತಯಾರಿ, ಶ್ರೀಮಠದ ಆವರಣದಲ್ಲಿ ಎಡಬಿಡೆದೆ ಸಾಗುತ್ತಿವೆ ವಿವಿಧ ಕಟ್ಟಡಗಳ ಕಾಮಗಾರಿ, ಗುರುಗಳ ಸಂಕ್ಪವನ್ನು ಇಡೇರಿಸಲು ಹಗಲಿರುಳೆನ್ನದೆ ಕಾರ್ಯಪ್ರವರ್ತರಾಗಿರುವ ಡಾ ಮುರುಘರಾಜೇಂದ್ರ ಸ್ವಾಮಿಜೀ.
 ಮುಗಳಖೋಡ: ಉತ್ತರ ಕರ್ನಾಟಕದಲ್ಲಿ ಕೀರ್ತಿ ಶಿಖರವಾಗಿರುವ ಪಟ್ಟಣದ ಶ್ರೀ ಯಲ್ಲಾಲಿಂಗೇಶ್ವರ ಬೃಹನ್ ಮಠವು ಶರಣ ಪರಂಪರೆಯ ಪತಾಕೆಯನ್ನು ವಚನ ಕ್ರಾಂತಿಯ ಕಳೆಯನ್ನು ಮತ್ತೊಮ್ಮೆ ದೇಶದ ಉದ್ದಗಲಕ್ಕೂ ಪಸರಿಸುವ ವಿಶಿಷ್ಟವಾದ ಕಾರ್ಯಕ್ರಮವನ್ನು ರೂಪಿಸುತ್ತಿದೆ. ಜಾತ್ಯಾತೀತ ಸಂದೇಶವನ್ನು ಸಾರುತ್ತ ಭಾವೈಕ್ಯತೆಯ ಸಮಾಗಮ, ಭಾರತೀಯ ಸಂಸ್ಕøತಿಯ ಅನಾವರಣ ಹಾಗೂ ತ್ರಿವಿಧ ದಾಸೋಹವನ್ನು ನಡೆಸಿಕೊಂಡು ಬರುತ್ತಿದೆ. 12ನೇ ಶತಮಾನದಲ್ಲಿ ಅಣ್ಣ ಬಸವಣ್ಣನವರು ಸಾಮಾಜಿಕ ಪಿಡಗುಗಳ ನಿರ್ಮೂಲನೆಗಾಗಿ ಕಲ್ಯಾಣದಲ್ಲಿ ಅನುಭವ ಮಂಟಪ ನಿರ್ಮಿಸಿ, ವಚನ ಕ್ರಾಂತಿಯನ್ನು ನಡೆಸಿದರು. ಅಂದು ನಡೆದ ಬಸವಣ್ಣನವರ ಅನುಭವ ಮಂಟಪದ ಪ್ರತಿಬಿಂಬ ವಚನ ಸಾಹಿತ್ಯದ ಕ್ರಾಂತಿಯ ಕಳೆ ಇಂದು ಸುಕ್ಷೇತ್ರ ಮುಗಳಖೋಡ ಜಿಡಗಾ ಮಠದ ಪೀಠಾಪತಿಗಳಾದ ಡಾ ಮುರುಘರಾಜೇಂದ್ರ ಸ್ವಾಮಿಜೀಯವರು ತಮ್ಮ ಗುರುಗಳ ಸಂಕಲ್ಪದಂತೆ ಶ್ರೀ ಸಿದ್ಧರಾಮೇಶ್ವರ ಸಂಕಲ್ಪ ಜಾತ್ರೆ ಎಂಬ ಶಿರ್ಷೀಕೆಯಲ್ಲಿ ನಡೆಸುತ್ತಿರುವ ಕಾರ್ಯಕ್ರಮವನ್ನು ಒಂದು ಬಾರಿ ವಿಶ್ಲೇಷಿಸಿದರೆ ಅಂದಿನ ವೆಭವ ಇಂದು ಎನ್ನುವುದು ಅಕ್ಷರ ಸಹ ಸತ್ಯವಾದ ಮಾತು.
 </h6>

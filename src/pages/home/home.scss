@@ -29,8 +29,17 @@ page-home {
     }*/
 
     h6 {
-    font-size: 2rem;
-    text-align:center;
+        font-size: 2rem;
+        text-align:center;
+    }
+
+ion-img.img_border_r.img-loaded img {
+    border-radius: 1rem;
+}   
+
+swiper-slider-new{
+  height:250px !important;  
 }
 
 }
+
