@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-blogs',
-  templateUrl: 'contacts.html'
+  templateUrl: 'blogs.html'
 })
 export class BlogsPage {
 
