@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,NavParams } from 'ionic-angular';
-import { AboutGuruPage } from '../about-guru/about-guru';
+// import { AboutGuruPage } from '../about-guru/about-guru';
 
 @Component({
   selector: 'page-blogsdata',
