@@ -1,87 +1,35 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>
-      Contacts Us
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-<ion-content padding id="page8" style="background-color:#f2e6e6;">
-  <div id="contacts-container3">
-    <h3>Adminstrative Office</h3>
-    <div style="margin-left:-10px;width:calc(100% + 20px);">
-      <img src="assets/img/Admin-Office.jpg" style="display:block;width:100%;height:90;margin-left:auto;margin-right:auto;" />
+<ion-content>
+  <div id="floating-panel">
+    <b>Start: </b>
+    <select [(ngModel)]="start" id="start" on-change="calculateAndDisplayRoute()">
+      <option value="chicago, il">Chicago</option>
+      <option value="st louis, mo">St Louis</option>
+      <option value="joplin, mo">Joplin, MO</option>
+      <option value="oklahoma city, ok">Oklahoma City</option>
+      <option value="amarillo, tx">Amarillo</option>
+      <option value="gallup, nm">Gallup, NM</option>
+      <option value="flagstaff, az">Flagstaff, AZ</option>
+      <option value="winona, az">Winona</option>
+      <option value="kingman, az">Kingman</option>
+      <option value="barstow, ca">Barstow</option>
+      <option value="san bernardino, ca">San Bernardino</option>
+      <option value="los angeles, ca">Los Angeles</option>
+    </select><br>
+    <b>End: </b>
+    <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+      <option value="chicago, il">Chicago</option>
+      <option value="st louis, mo">St Louis</option>
+      <option value="joplin, mo">Joplin, MO</option>
+      <option value="oklahoma city, ok">Oklahoma City</option>
+      <option value="amarillo, tx">Amarillo</option>
+      <option value="gallup, nm">Gallup, NM</option>
+      <option value="flagstaff, az">Flagstaff, AZ</option>
+      <option value="winona, az">Winona</option>
+      <option value="kingman, az">Kingman</option>
+      <option value="barstow, ca">Barstow</option>
+      <option value="san bernardino, ca">San Bernardino</option>
+      <option value="los angeles, ca">Los Angeles</option>
+    </select>
     </div>
-  </div>
-  <div id="contacts-markdown6" style="text-align:left;" class="show-list-numbers-and-dots">
-
-    <p style="color:#000000;font-weight:900;">
-      Sri Sri Yallalingeshwara Punnyashram, Mukthi Mandir Mutt, At Po. Mugalkhod, Tq:Raibagh, Dist. Belgaum-591235.
-    </p>
-    <p style="color:#000000;font-weight:900;">
-
-      Web : www.mugalkhodjidaga.co.in
-    </p>
-    <p style="color:#000000;font-weight:900;">
-      <!-- <ion-icon style="font-size: 1.7rem;" name="call"></ion-icon> -->
-       
-       <a button href="tel:08331-252525" clear>
-          <ion-icon style="font-size: 1.7rem;" name="call"></ion-icon>
-          08331-252525
-        </a>
-        /
-        <a button href="tel:+919980201998" clear>
-         9980201998
-        </a>
-        
-    </p>
-    <p style="color:#000000;font-weight:900;">
-      
-     
-
-      <a href="whatsapp://send?text=Jai-Siddalinga&phone=+919611232009&abid=+919611232009"><ion-icon style="font-size: 1.7rem;color: green" name="logo-whatsapp"></ion-icon>
-        9611232009
-      </a>
-       
-
-    </p>
-    <p style="color:#000000;font-weight:900;">
-      <ion-icon style="font-size: 1.7rem;" name="mail"></ion-icon>
-       sankalpayatre@gmail.com
-    </p>
-
-    <hr>
-  </div>
-  <div>
-    <h4>Follow us on</h4>
-    <ion-icon _ngcontent-c0="" onclick="window.open('https://www.facebook.com/MugalkhodJidagaMath', '_system');"  style="color: darkblue;" name="logo-facebook" role="img"  aria-label="FaceBook"></ion-icon>
-    <ion-icon _ngcontent-c0="" onclick="window.open('https://www.instagram.com/mugalkhodjidagamath', '_system');" style="color: brown;" name="logo-instagram" role="img"  aria-label="Insta"></ion-icon>
-    <ion-icon _ngcontent-c0="" onclick="window.open('https://www.youtube.com/channel/UCYiP50972p-sCfZoyxjYIQw', '_system');" style="color: red;" name="logo-youtube" role="img"  aria-label="Youtube "></ion-icon>
-    <ion-icon _ngcontent-c0="" onclick="window.open('https://twitter.com/mugalkhodjidaga', '_system');" style="color: blue;" name="logo-twitter" role="img"  aria-label="twitter "></ion-icon>
-    <!-- <a button href="tel:12345789" clear>
-      <ion-icon name="call"></ion-icon>
-    </a> -->
-  </div>
-
- 
-  <!-- 
-  <div style="text-align:center;">
-    <p style="color:#000000;font-weight:900;text-align: left;font-size:larger;">
-      Feedback and Suggestions 
-    </p>
-   
-    <p style="color:#0010f0;font-weight:900;text-align: left;">
-        s.s.dr.murughrajendra@gmail.com
-        </p>
-        
-     
-       <p style="color:#0010f0;font-weight:900;text-align: left;">kalidase@gmail.com (9741870011)</p>
-      <p style="color:#0010f0;font-weight:900;text-align: left;">sharan.sp.sp@gmail.com (9980201998)</p> 
-
-     <p style="color:#0010f0;font-weight:900;text-align: left;">
-      <b> Mob:</b> 9980201998 
-    </p> 
-  </div>-->
+    <div #map id="map"></div>
 </ion-content>

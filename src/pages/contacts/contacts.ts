@@ -1,20 +1,54 @@
-import { Component } from '@angular/core';
+
+
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { IonicPage } from 'ionic-angular';
 import { NavController } from 'ionic-angular';
 
+
+declare var google;
+
+//@IonicPage()
 @Component({
   selector: 'page-contacts',
   templateUrl: 'contacts.html'
 })
-export class ContactsPage {
+export class ContactsPage {@ViewChild('map') mapElement: ElementRef;
+  map: any;
+  start = 'chicago, il';
+  end = 'chicago, il';
+  directionsService = new google.maps.DirectionsService;
+  directionsDisplay = new google.maps.DirectionsRenderer;
 
   constructor(public navCtrl: NavController) {
+
   }
 
-  followUsClickFB  (arg) {
-  	alert(arg);
-  	 window.open('fb://page/MugalkhodJidagaMath/', '_system', 'location=no');
-  	//window.open('https://www.facebook.com/1401408870089080', '_system');
-  	//https://stackoverflow.com/questions/4191492/launch-facebook-app-from-other-app
+  ionViewDidLoad(){
+    this.initMap();
+  }
+
+  initMap() {
+    this.map = new google.maps.Map(this.mapElement.nativeElement, {
+      zoom: 7,
+      center: {lat: 41.85, lng: -87.65}
+    });
+
+    this.directionsDisplay.setMap(this.map);
+  }
+
+  calculateAndDisplayRoute() {
+    alert();
+    this.directionsService.route({
+      origin: this.start,
+      destination: this.end,
+      travelMode: 'DRIVING'
+    }, (response, status) => {
+      if (status === 'OK') {
+        this.directionsDisplay.setDirections(response);
+      } else {
+        window.alert('Directions request failed due to ' + status);
+      }
+    });
   }
   
 }
