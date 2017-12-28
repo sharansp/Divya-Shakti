@@ -31,12 +31,12 @@
        <h3>Sankalpa Yatre Photos</h3>
       <ion-row>
        
-        <ion-col col-6 col-md-4 col-xl-3 *ngFor="let item of data">
+        <ion-col col-12 col-md-4 col-xl-3 *ngFor="let item of data">
           <!-- <div class="image-container" [style.background-image]="'url(assets/img/' + image + '.jpg)'"></div> -->
 
           <h5>{{item.Title}}</h5>
             <div >
-              <img src="{{item.Link}}" imageViewer  />
+              <img src="{{item.Link}}" style="display:block;width:100%;height:90;margin-left:auto;margin-right:auto;"  imageViewer  />
             </div>
         </ion-col>
 
