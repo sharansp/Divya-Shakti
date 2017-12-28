@@ -14,8 +14,8 @@ declare var google;
 })
 export class ContactsPage {@ViewChild('map') mapElement: ElementRef;
   map: any;
-  start = 'chicago, il';
-  end = 'chicago, il';
+  start = 'Bangalore,India';
+  end = 'Gulbarga,India';
   directionsService = new google.maps.DirectionsService;
   directionsDisplay = new google.maps.DirectionsRenderer;
 
@@ -30,14 +30,13 @@ export class ContactsPage {@ViewChild('map') mapElement: ElementRef;
   initMap() {
     this.map = new google.maps.Map(this.mapElement.nativeElement, {
       zoom: 7,
-      center: {lat: 41.85, lng: -87.65}
+      center: {lat: 16.444317, lng: 74.968643}
     });
 
     this.directionsDisplay.setMap(this.map);
   }
 
   calculateAndDisplayRoute() {
-    alert();
     this.directionsService.route({
       origin: this.start,
       destination: this.end,

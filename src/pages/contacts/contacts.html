@@ -1,9 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Directions
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
 <ion-content>
   <div id="floating-panel">
     <b>Start: </b>
     <select [(ngModel)]="start" id="start" on-change="calculateAndDisplayRoute()">
-      <option value="chicago, il">Chicago</option>
-      <option value="st louis, mo">St Louis</option>
+      <option value="16.444317,74.968643">Mugalkhod</option>
+      <!-- <option value="st louis, mo">St Louis</option>
       <option value="joplin, mo">Joplin, MO</option>
       <option value="oklahoma city, ok">Oklahoma City</option>
       <option value="amarillo, tx">Amarillo</option>
@@ -13,11 +24,12 @@
       <option value="kingman, az">Kingman</option>
       <option value="barstow, ca">Barstow</option>
       <option value="san bernardino, ca">San Bernardino</option>
-      <option value="los angeles, ca">Los Angeles</option>
+      <option value="los angeles, ca">Los Angeles</option> -->
     </select><br>
     <b>End: </b>
-    <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
-      <option value="chicago, il">Chicago</option>
+    <input type="input" name="?" [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+    <!-- <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+      <option value="Bangalore, Karnataka">Bangalore,India</option>
       <option value="st louis, mo">St Louis</option>
       <option value="joplin, mo">Joplin, MO</option>
       <option value="oklahoma city, ok">Oklahoma City</option>
@@ -29,7 +41,7 @@
       <option value="barstow, ca">Barstow</option>
       <option value="san bernardino, ca">San Bernardino</option>
       <option value="los angeles, ca">Los Angeles</option>
-    </select>
+    </select> -->
     </div>
     <div #map id="map"></div>
 </ion-content>
