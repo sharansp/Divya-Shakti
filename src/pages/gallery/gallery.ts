@@ -37,6 +37,10 @@ export class GalleryPage {
 			
 			"Title": "",
 			"Link": "https://lh3.googleusercontent.com/-BIFHo3MgGbQ/WkVzCZbMwNI/AAAAAAAAAjU/4Xg1etndoXAbfDnB5dcXuguwPu-pMRX6wCL0BGAYYCw/h555/2017-12-28.jpg"
+		},{
+			
+			"Title": "With B. S. Yeddyurappa",
+			"Link": "https://lh3.googleusercontent.com/-4iK80f0k160/WkVzqFpzQTI/AAAAAAAAAjc/S8oTediZOK4EYmRvzpEpJyf1reQB7UoagCL0BGAYYCw/h637/2017-12-28.jpg"
 		}
 			];
 	  }
