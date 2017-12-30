@@ -14,8 +14,8 @@ declare var google;
 })
 export class ContactsPage {@ViewChild('map') mapElement: ElementRef;
   map: any;
-  start = 'Bangalore,India';
-  end = 'Gulbarga,India';
+  start = '';  // this should be current loaction
+  end = "16.444317,74.968643";     // This should be destination(drop down select of famous mutts)
   directionsService = new google.maps.DirectionsService;
   directionsDisplay = new google.maps.DirectionsRenderer;
 
@@ -28,10 +28,16 @@ export class ContactsPage {@ViewChild('map') mapElement: ElementRef;
   }
 
   initMap() {
+    var uluru = {lat: 16.444317, lng: 74.968643};
     this.map = new google.maps.Map(this.mapElement.nativeElement, {
-      zoom: 7,
-      center: {lat: 16.444317, lng: 74.968643}
+      zoom: 8,
+      center: uluru  // Mugalkhod mutt
     });
+   
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: this.map
+        });
 
     this.directionsDisplay.setMap(this.map);
   }

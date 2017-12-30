@@ -12,36 +12,13 @@
 <ion-content>
   <div id="floating-panel">
     <b>Start: </b>
-    <select [(ngModel)]="start" id="start" on-change="calculateAndDisplayRoute()">
-      <option value="16.444317,74.968643">Mugalkhod</option>
-      <!-- <option value="st louis, mo">St Louis</option>
-      <option value="joplin, mo">Joplin, MO</option>
-      <option value="oklahoma city, ok">Oklahoma City</option>
-      <option value="amarillo, tx">Amarillo</option>
-      <option value="gallup, nm">Gallup, NM</option>
-      <option value="flagstaff, az">Flagstaff, AZ</option>
-      <option value="winona, az">Winona</option>
-      <option value="kingman, az">Kingman</option>
-      <option value="barstow, ca">Barstow</option>
-      <option value="san bernardino, ca">San Bernardino</option>
-      <option value="los angeles, ca">Los Angeles</option> -->
-    </select><br>
+      <input type="input" name="?" [(ngModel)]="start" id="start" on-change="calculateAndDisplayRoute()"><br>
+      
     <b>End: </b>
-    <input type="input" name="?" [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
-    <!-- <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
-      <option value="Bangalore, Karnataka">Bangalore,India</option>
-      <option value="st louis, mo">St Louis</option>
-      <option value="joplin, mo">Joplin, MO</option>
-      <option value="oklahoma city, ok">Oklahoma City</option>
-      <option value="amarillo, tx">Amarillo</option>
-      <option value="gallup, nm">Gallup, NM</option>
-      <option value="flagstaff, az">Flagstaff, AZ</option>
-      <option value="winona, az">Winona</option>
-      <option value="kingman, az">Kingman</option>
-      <option value="barstow, ca">Barstow</option>
-      <option value="san bernardino, ca">San Bernardino</option>
-      <option value="los angeles, ca">Los Angeles</option>
-    </select> -->
-    </div>
-    <div #map id="map"></div>
+      <select [(ngModel)]="end" id="end" on-change="calculateAndDisplayRoute()">
+        <option value="16.444317,74.968643">Mugalkhod</option>
+      </select><br>
+   </div>
+
+   <div #map id="map"></div>
 </ion-content>
