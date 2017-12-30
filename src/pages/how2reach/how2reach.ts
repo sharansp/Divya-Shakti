@@ -1,7 +1,6 @@
 
 
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { IonicPage } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 
 
@@ -32,14 +31,16 @@ export class HowToReachPage {
       console.log('Error getting location', error);
     });
 
-    //let watch = this.geolocation.watchPosition();
-    //watch.subscribe((data) => {
-     // data can be a set of coordinates, or an error (if an error occurred).
+    let watch = this.geolocation.watchPosition();
+    watch.subscribe((resp) => {
+    // data can be a set of coordinates, or an error (if an error occurred).
      // data.coords.latitude
      // data.coords.longitude
-     //this.start = ""+resp.coords.latitude+","+resp.coords.longitude;
-      //this.calculateAndDisplayRoute();
-    //});
+     if(resp){
+     this.start = ""+resp.coords.latitude+","+resp.coords.longitude;
+     this.calculateAndDisplayRoute();
+     }
+    });
   }
 
   
@@ -54,12 +55,10 @@ export class HowToReachPage {
       zoom: 8,
       center: uluru  // Mugalkhod mutt
     });
-   
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: this.map
-        });
-
+    var marker = new google.maps.Marker({
+	  position: uluru,
+	  map: this.map
+	});
     this.directionsDisplay.setMap(this.map);
   }
 
