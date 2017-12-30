@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Article
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="pageBlog" style="background-color:#FFF5EE;">
+   <img class="imageClass" src="{{data.BlogImage}}" imageViewer>
+
+   <div>
+        
+
+
+<h1  style="text-align: center;">{{data.BlogTitle}}</h1>
+<h5 style="text-align: justify;">
+{{data.BlogContent}}
+</h5>
+<div  *ngIf="data.BlogImage2" ><img  class="imageClass" src="{{data.BlogImage2}}" imageViewer></div>
+
+
+  </div>
+
+</ion-content>

@@ -1,5 +1,6 @@
+
 <ion-header>
-  <ion-navbar>
+  <ion-navbar no-border-bottom>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -7,10 +8,56 @@
       Gallery
     </ion-title>
   </ion-navbar>
-</ion-header>
-<ion-content padding id="page11" style="background-color:#f5ecec;">
 
-   <ion-grid id="idListView">
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="gallery">
+      <ion-segment-button value="photos">
+        Photos
+      </ion-segment-button>
+      <!-- <ion-segment-button value="kittens">
+        Music
+      </ion-segment-button> -->
+      <ion-segment-button value="videos">
+        Video
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="gallery">
+    <ion-list *ngSwitchCase="'photos'">
+    <!--  <ion-grid *ngSwitchCase="'regular'"> -->
+       <h3>Sankalpa Yatre Photos</h3>
+      <ion-row>
+       
+        <ion-col col-12 col-md-4 col-xl-3 *ngFor="let item of data">
+          <!-- <div class="image-container" [style.background-image]="'url(assets/img/' + image + '.jpg)'"></div> -->
+
+          <h5>{{item.Title}}</h5>
+            <div >
+              <img src="{{item.Link}}" style="display:block;width:100%;height:90;margin-left:auto;margin-right:auto;"  imageViewer  />
+            </div>
+        </ion-col>
+
+      </ion-row>
+
+      <!-- <ion-row>
+         <h3>Sidarameshwara Appaji Photos</h3>
+        <ion-col col-6 col-md-4 col-xl-3 *ngFor="let image of [8,9]">
+         
+            <div style="margin-left:-10px;width:calc(100% + 20px);">
+              <img src="assets/img/Admin-Office.jpg" imageViewer style="display:block;width:100%;height:90;margin-left:auto;margin-right:auto;" />
+            </div>
+        </ion-col>
+      </ion-row> -->
+   <!--  </ion-grid> -->
+    </ion-list>
+
+  
+
+    <ion-list *ngSwitchCase="'videos'">
+     <ion-grid id="idListViewVideo" >
    
 
   <ion-list id="idListViewList" >
@@ -92,24 +139,7 @@
   </ion-list>
 
   </ion-grid>
+  </ion-list>
 
-  <!-- <div id="gallery-container4">
-    <h2 id="gallery-heading8" style="color:#000000;text-align:center;">
-      Videos
-    </h2>
-    <div   id="gallery-spacer0">
-      Mugalkhod Jidaga Math || Parampare || Small Teaser
-    </div>
-    <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="gallery-video1">
-      <iframe src="https://www.youtube.com/embed/0mDU68mIwYY?rel=0&amp;showinfo=0?modestbranding=1" frameborder="0" allowfullscreen width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-    </div>
-    <div class="spacer" style="height:10px;" id="gallery-spacer1"></div>
-    <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="gallery-video2">
-      <iframe src="https://www.youtube.com/embed/pNbd6XPcYak?rel=0&amp;showinfo=0?modestbranding=1" frameborder="0" allowfullscreen width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-    </div>
-    <div class="spacer" style="height:10px;" id="gallery-spacer2"></div>
-    <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="gallery-video3">
-      <iframe src="https://www.youtube.com/embed/YmXIsADxyQg?rel=0&amp;showinfo=0?modestbranding=1" frameborder="0" allowfullscreen width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
-    </div>
-  </div> -->
+  </div>
 </ion-content>

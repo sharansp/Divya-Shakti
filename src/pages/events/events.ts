@@ -17,7 +17,7 @@ export class EventsPage {
   initializeItems(){
 
   	this.Kannada =  [
-		{
+		/*{
 			
 			"Description": "ಪ ಪೂ ಶ್ರೀ ಷ ಶಿ ಡಾ ಮುರುಘರಾಜೇಂದ್ರ",
 			"SubDesc": "ಮಹಾಸ್ವಾಮಿಗಳವರ 33ನೇ ಗುರುವಂದನ",
@@ -32,7 +32,7 @@ export class EventsPage {
 			"Place": "ಮುಗುಳಖೋಡ",
 			"Date": "ಜನೆವರಿ 2",
 			"Time": ""
-		},
+		},*/
 		{
 			
 			"Description": "ಸದ್ಗುರು ಶ್ರೀ ಯಲ್ಲಾಲಿಂಗ ಮಹಾಪ್ರಭುಗಳ",
@@ -84,7 +84,7 @@ export class EventsPage {
 			];
 
   	this.English =  [
-		{
+		/*{
 			
 			"Description": "Param Pujya Shri S S Dr Murugharajendra",
 			"SubDesc": "Mahaswamiji 33rd Guru Vandana Programm",
@@ -99,7 +99,7 @@ export class EventsPage {
 			"Place": "Mugalkhod",
 			"Date": "January 2",
 			"Time": ""
-		},
+		},*/
 		{
 			
 			"Description": "Pujya Yallalinga Mahaswamiji Punyaradhane!!",
