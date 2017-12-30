@@ -9,16 +9,19 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding id="pageBlog" style="background-color:#FFF5EE;">
-   <img src="{{data.BlogImage}}">
+   <img class="imageClass" src="{{data.BlogImage}}" imageViewer>
 
    <div>
         
 
 
 <h1  style="text-align: center;">{{data.BlogTitle}}</h1>
-<h6 style="text-align: justify;">
+<h5 style="text-align: justify;">
 {{data.BlogContent}}
-</h6>
+</h5>
+<div  *ngIf="data.BlogImage2" ><img  class="imageClass" src="{{data.BlogImage2}}" imageViewer></div>
+
+
   </div>
 
 </ion-content>

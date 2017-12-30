@@ -60,7 +60,7 @@ export class MyApp {
             enableBackdropDismiss:false,
             buttons: [
             {
-                text: 'Ok',
+                text: 'Yes',
                 handler: () => {
                   console.log('Ok clicked');
                   platform.exitApp();
