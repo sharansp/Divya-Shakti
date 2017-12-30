@@ -4,18 +4,15 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { EventsPage } from '../pages/events/events';
 import { JagadgurusPage } from '../pages/jagadgurus/jagadgurus';
-//import { BlogsPage } from '../pages/blogs/blogs';
 import { HomePage } from '../pages/home/home';
 import { BlogsPage } from '../pages/blogs/blogs';
 import { BlogsDataPage } from '../pages/blogsdata/blogsdata';
 import { MuttsAshramaPage } from '../pages/mutts-ashrama/mutts-ashrama';
-//import { Blogs2Page } from '../pages/blogs2/blogs2';
 import { GalleryPage } from '../pages/gallery/gallery';
 import { AbhishekSevaPage } from '../pages/abhishek-seva/abhishek-seva';
 import { ContactsPage } from '../pages/contacts/contacts';
 import { SriSiddalingaAppajiPage } from '../pages/sri-siddalinga-appaji/sri-siddalinga-appaji';
 import { SriYallalingAppajiPage } from '../pages/sri-yallaling-appaji/sri-yallaling-appaji';
-//import { PagePage } from '../pages/page/page';
 import { AboutGuruPage } from '../pages/about-guru/about-guru';
 import { SriSiddarameshwaraAppajiPage } from '../pages/sri-siddarameshwara-appaji/sri-siddarameshwara-appaji';
 import { SriMurugharajendraAppajiPage } from '../pages/sri-murugharajendra-appaji/sri-murugharajendra-appaji';
@@ -25,6 +22,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { IonicImageViewerModule } from 'ionic-img-viewer';
+import { Geolocation } from '@ionic-native/geolocation';
+import { HowToReachPage } from '../pages/how2reach/how2reach';
 
 
 @NgModule({
@@ -45,7 +44,8 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     SriMurugharajendraAppajiPage,
     SankalpaYatrePage,
     BlogsPage,
-    BlogsDataPage
+    BlogsDataPage,
+    HowToReachPage
   ],
   imports: [
     BrowserModule,
@@ -70,11 +70,13 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     SriMurugharajendraAppajiPage,
     SankalpaYatrePage,
     BlogsPage,
-    BlogsDataPage
+    BlogsDataPage,
+    HowToReachPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

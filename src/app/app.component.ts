@@ -17,6 +17,7 @@ import { HomePage } from '../pages/home/home';
 import { BlogsPage } from '../pages/blogs/blogs';
 import { BlogsDataPage } from '../pages/blogsdata/blogsdata';
 import { SankalpaYatrePage } from '../pages/sankalpa-yatre/sankalpa-yatre';
+import { HowToReachPage } from '../pages/how2reach/how2reach';
 
 
 
@@ -124,6 +125,8 @@ export class MyApp {
             this.navCtrl.setRoot(HomePage);
           }else if(view.instance instanceof SankalpaYatrePage){
             this.navCtrl.setRoot(HomePage);
+          }else if(view.instance instanceof HowToReachPage){
+            this.navCtrl.setRoot(HomePage);
           }else if(view.instance instanceof BlogsPage){
             this.navCtrl.setRoot(HomePage);
           }else if(view.instance instanceof SriMurugharajendraAppajiPage){
@@ -220,5 +223,8 @@ export class MyApp {
   }goToBlogs(params){
     if (!params) params = {};
     this.navCtrl.setRoot(BlogsPage);
+  }goToHowToReach(params){
+    if (!params) params = {};
+    this.navCtrl.setRoot(HowToReachPage);
   }
 }

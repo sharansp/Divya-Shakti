@@ -1,0 +1,58 @@
+
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      How To Reach
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="how2reach">
+      <ion-segment-button value="address">
+        Address
+      </ion-segment-button>
+
+      <ion-segment-button value="mapview">
+        Map View
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div [ngSwitch]="how2reach">
+    <ion-list *ngSwitchCase="'address'">
+   
+       <h3>Sankalpa Yatre Photos</h3>
+      
+    </ion-list>
+
+  
+
+    <ion-list *ngSwitchCase="'mapview'">
+    <ion-content>
+  <div id="floating-panel">
+    <b>Start: </b>
+      <input type="input" name="?" [(ngModel)]="start" id="start" on-change="calculateAndDisplayRoute()"><br>
+      
+    <b>End: </b>
+      <select [(ngModel)]="end" id="end" on-change="calculateAndDisplayRoute()">
+        <option value="16.444317,74.968643">Mugalkhod</option>
+        <option value="17.5210196,76.4953029">Jidaga</option>
+      </select><br>
+    
+     
+   </div>
+
+   <div #map id="map"></div>
+</ion-content>
+ 
+  </ion-list>
+
+  </div>
+</ion-content>
