@@ -4,6 +4,7 @@ import { EventsPage } from '../events/events';
 import { SankalpaYatrePage } from '../sankalpa-yatre/sankalpa-yatre';
 import { JagadgurusPage } from '../jagadgurus/jagadgurus';
 import { GalleryPage } from '../gallery/gallery';
+import { BlogsPage } from '../blogs/blogs';
 
 
 @Component({
@@ -34,6 +35,11 @@ export class HomePage {
   goToEvents(params){
     if (!params) params = {};
     this.navCtrl.push(EventsPage);
+  }
+
+  goToBlogs(params){
+    if (!params) params = {};
+    this.navCtrl.push(BlogsPage);
   }
 
   goToSankalpaYatre(params){
