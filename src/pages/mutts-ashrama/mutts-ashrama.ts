@@ -12,13 +12,13 @@ export class MuttsAshramaPage {
   	 this.initializeItems();
   	 	  
 	}
-
+//"Location":"geo://17.5210196,76.4953029"
 	initializeItems(){
 		this.data = [  
    {
       "Place":"Mugalkhod",
-      "Mutt_Address":"Sri Sri Yallalingeshwara Punnyashram, Mukthi Mandir Mutt, At Po. Mugalkhod, Tq:Raibagh, Dist. Belgaum-591235.",
-      "Location":"geo://17.5210196,76.4953029",
+      "Mutt_Address":"Sri Sri Yallalingeshwara Punnyashram, Mukthi Mandir Mutt, At Po. Mugalkhod, Tq:Raibagh, Dist. Belgaum-591235."
+      
    },
    {
       "Place":"Jidga",
@@ -681,6 +681,10 @@ export class MuttsAshramaPage {
         return ((item['Place'].toLowerCase().indexOf(val.toLowerCase()) > -1) || (item['Mutt_Address'].toLowerCase().indexOf(val.toLowerCase()) > -1));
       })
     }
+  }
+
+  onPressLocation(loc){
+      window.open(loc,'_system');
   }
 
 }
