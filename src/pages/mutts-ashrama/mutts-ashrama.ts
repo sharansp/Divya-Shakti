@@ -17,7 +17,8 @@ export class MuttsAshramaPage {
 		this.data = [  
    {
       "Place":"Mugalkhod",
-      "Mutt_Address":"Sri Sri Yallalingeshwara Punnyashram, Mukthi Mandir Mutt, At Po. Mugalkhod, Tq:Raibagh, Dist. Belgaum-591235."
+      "Mutt_Address":"Sri Sri Yallalingeshwara Punnyashram, Mukthi Mandir Mutt, At Po. Mugalkhod, Tq:Raibagh, Dist. Belgaum-591235.",
+      "Location":"geo://17.5210196,76.4953029",
    },
    {
       "Place":"Jidga",

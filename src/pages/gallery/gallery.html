@@ -28,30 +28,31 @@
   <div [ngSwitch]="gallery">
     <ion-list *ngSwitchCase="'photos'">
     <!--  <ion-grid *ngSwitchCase="'regular'"> -->
-       <h3>Sankalpa Yatre Photos</h3>
+       <!-- <h3>Sankalpa Yatre Photos</h3> -->
+
       <ion-row>
        
         <ion-col col-12 col-md-4 col-xl-3 *ngFor="let item of data">
-          <!-- <div class="image-container" [style.background-image]="'url(assets/img/' + image + '.jpg)'"></div> -->
-
+         
           <h5>{{item.Title}}</h5>
             <div >
               <img src="{{item.Link}}" style="display:block;width:100%;height:90;margin-left:auto;margin-right:auto;"  imageViewer  />
             </div>
         </ion-col>
 
+        <!-- <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+            <ion-infinite-scroll-content></ion-infinite-scroll-content>
+        </ion-infinite-scroll> -->
+
       </ion-row>
 
-      <!-- <ion-row>
-         <h3>Sidarameshwara Appaji Photos</h3>
-        <ion-col col-6 col-md-4 col-xl-3 *ngFor="let image of [8,9]">
-         
-            <div style="margin-left:-10px;width:calc(100% + 20px);">
-              <img src="assets/img/Admin-Office.jpg" imageViewer style="display:block;width:100%;height:90;margin-left:auto;margin-right:auto;" />
-            </div>
-        </ion-col>
-      </ion-row> -->
-   <!--  </ion-grid> -->
+      <!-- <div class="row responsive-md">
+                    <div class="col-6 col-md-4 col-xl-3" *ngFor="let item of data">
+                        <img src="{{item.Link}}" width="100%" />
+                    </div>
+                </div> -->
+
+      
     </ion-list>
 
   
@@ -62,18 +63,14 @@
 
   <ion-list id="idListViewList" >
     <ion-item class="icon-item-bg" style="background-color:#f5ecec;" color="positive">
-      <!-- <h3  style="color:#ff7500;font-size: 25px;"> 
-        Shri Siddharameshwara || Sankalpa Yatre || Motion Poster
-      </h3> -->
+    
       <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="gallery-video11">
       <iframe src="https://www.youtube.com/embed/CoHVPvj0tsM?rel=0&amp;showinfo=0?modestbranding=1" frameborder="0" allowfullscreen  style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
     </div>
     </ion-item>
     <hr>
     <ion-item class="icon-item-bg" style="background-color:#f5ecec;" color="positive">
-      <!-- <h3  style="color:#ff7500;font-size: 25px;"> 
-        Shri Siddharameshwara Sankalpa Yatre || Details Of Event
-      </h3> -->
+      
       <div style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" >
       <iframe src="https://www.youtube.com/embed/YmXIsADxyQg?rel=0&amp;showinfo=0?modestbranding=1" frameborder="0" allowfullscreen  style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
     </div>

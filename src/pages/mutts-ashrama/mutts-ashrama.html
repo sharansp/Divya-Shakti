@@ -31,6 +31,7 @@
     </ion-col>
     <!-- <ion-col >
       Address
+      https://www.google.com/maps/search/?api=1&query=47.5951518,-122.3316393
     </ion-col> -->
   </ion-row>
 
@@ -40,11 +41,21 @@
     <ion-col col-50 style="font-size: larger;color: black;text-align:center;line-height: 130px;font-weight: 500;">
       {{hero.Place}}
     </ion-col>
-    <ion-col col-50 style="font-size: large;color: black;text-align:center;">
-      {{hero.Mutt_Address}}
+    <ion-col col-50  style="font-size: large;color: black;text-align:center;">
+      <a *ngIf="hero.Location" href="{{hero.Location}}">
+              {{hero.Mutt_Address}}
+      </a>
+
+      <p *ngIf="!hero.Location" >
+              {{hero.Mutt_Address}}
+      </p>
+
     </ion-col>
-    <!-- <ion-col >
+    <!-- <ion-col >window.open('geo://17.5210196,76.4953029','_blank')
       {{hero.Mutt_Address}}
+      <a ion-item href="https://www.ionicframework.com">
+              {{hero.Mutt_Address}}
+      </a>
     </ion-col> -->
   </ion-row>
 
