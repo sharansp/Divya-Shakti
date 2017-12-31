@@ -55,10 +55,10 @@ export class HowToReachPage {
       zoom: 8,
       center: uluru  // Mugalkhod mutt
     });
-    var marker = new google.maps.Marker({
+    /*var marker = new google.maps.Marker({
 	  position: uluru,
 	  map: this.map
-	});
+	});*/
     this.directionsDisplay.setMap(this.map);
   }
 
