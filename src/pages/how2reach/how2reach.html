@@ -10,18 +10,23 @@
 </ion-header>
 
 <ion-content>
-  <div id="floating-panel">
-    <b>Start: </b>
+    
+  <div style="text-align:-webkit-auto;" id="floating-panel">
+    <div #directionsPanel>
+    <b >Start: </b>
       <input type="input" name="?" [(ngModel)]="start" id="start" on-change="calculateAndDisplayRoute()"><br>
       
-    <b>End: </b>
+    <b >End: </b>
       <select [(ngModel)]="end" id="end" on-change="calculateAndDisplayRoute()">
         <option value="16.444317,74.968643">Mugalkhod</option>
         <option value="17.5210196,76.4953029">Jidaga</option>
       </select><br>
     
+      <button ion-button round on-click="startNavigating()">Show Navigation</button>
+    </div>
      <!--  <b><button>Show in Google Maps</button></b> -->
    </div>
+
 
    <div #map id="map"></div>
 </ion-content>

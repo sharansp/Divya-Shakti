@@ -2,6 +2,7 @@
 
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation';
+//import { Network } from '@ionic-native/network';
 
 
 declare var google;
@@ -13,6 +14,7 @@ declare var google;
 export class HowToReachPage {
 
   @ViewChild('map') mapElement: ElementRef;
+  @ViewChild('directionsPanel') directionsPanel: ElementRef;
   how2reach: string = "address";
   map: any;
   start = '';  // this should be current loaction
@@ -22,16 +24,19 @@ export class HowToReachPage {
 
   constructor(private geolocation: Geolocation) {
 
+
+
     this.geolocation.getCurrentPosition().then((resp) => {
     if(resp){
       this.start = ""+resp.coords.latitude+","+resp.coords.longitude;
       this.calculateAndDisplayRoute();
+      //this.startNavigating();
       }
     }).catch((error) => {
       console.log('Error getting location', error);
     });
 
-    let watch = this.geolocation.watchPosition();
+    /*let watch = this.geolocation.watchPosition();
     watch.subscribe((resp) => {
     // data can be a set of coordinates, or an error (if an error occurred).
      // data.coords.latitude
@@ -40,13 +45,15 @@ export class HowToReachPage {
      this.start = ""+resp.coords.latitude+","+resp.coords.longitude;
      this.calculateAndDisplayRoute();
      }
-    });
+    });*/
   }
+
 
   
 
   ionViewDidLoad(){
     this.initMap();
+    //this.startNavigating()
   }
 
   initMap() {
@@ -75,5 +82,27 @@ export class HowToReachPage {
       }
     });
   }
+
+  startNavigating(){
+ 
+       
+        //this.directionsDisplay.setMap(this.map);
+        this.directionsDisplay.setPanel(this.directionsPanel.nativeElement);
+ 
+        this.directionsService.route({
+            origin: this.start,
+            destination: this.end,
+            travelMode: google.maps.TravelMode['DRIVING']
+        }, (res, status) => {
+ 
+            if(status == google.maps.DirectionsStatus.OK){
+                this.directionsDisplay.setDirections(res);
+            } else {
+                console.warn(status);
+            }
+ 
+        });
+ 
+    }
   
 }

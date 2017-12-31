@@ -23,6 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { IonicImageViewerModule } from 'ionic-img-viewer';
 import { Geolocation } from '@ionic-native/geolocation';
+import { Network } from '@ionic-native/network';
 import { HowToReachPage } from '../pages/how2reach/how2reach';
 
 
@@ -77,6 +78,7 @@ import { HowToReachPage } from '../pages/how2reach/how2reach';
     StatusBar,
     SplashScreen,
     Geolocation,
+    Network,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
