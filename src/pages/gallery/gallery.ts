@@ -59,17 +59,37 @@ export class GalleryPage {
 	  onPressVideos(evt){
 	  	var oVideoGrid = document.getElementById('idListViewVideo');
 	  	oVideoGrid.hidden = false;
-	  	//var oBtnToggle= document.getElementById('idButtonToggle');
-
-	  	/*if(!oTable.hidden){
-	  		oBtnToggle.textContent = "Show Events List";
-	  	}else{
-	  		oBtnToggle.textContent = "Show Events Table";
-	  	}*/
 	  }
 
-	/*  returnLink(){
-			
-		}*/
+	  /*ionViewDidLoad(e){
+	  	debugger;
+	  }
+	  ionViewWillUnload(e){
+	  	debugger;
+	  }
+	  ionViewDidLeave(e){
+	  	debugger;
+	  }
+	  ionViewWillLeave(e){
+	  	debugger;
+	  }
+	  ionViewWillEnter() {
+	  	debugger
+	  }*/
+
+	  doInfinite(infiniteScroll) {
+	    console.log('Begin async operation');
+
+	    setTimeout(() => {
+	      for (let i = 0; i < 3; i++) {
+	        this.data.push( this.data.length );
+	      }
+
+	      console.log('Async operation has ended');
+	      infiniteScroll.complete();
+	    }, 500);
+	  }
+
+
   
 }
